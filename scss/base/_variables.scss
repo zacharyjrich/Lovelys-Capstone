@@ -1,17 +1,21 @@
+
 // Descriptive color variables
 
 $white          : #fff;
 $black          : #000;
-$orange         : #FF8C00;
-$gray           : #292727;
+$dark-blue      : #2B2D42;
+$red            : #CE1E34;
+$gray           : #848FA3;
 
 // Functional color variables
 
-// $background-color: $white;
+$primary-color  : $dark-blue;
+$second-color   : $red;
+$third-color    : $gray;
 
 // Font stacks
 
-$stack-sans : 'Raleway', sans-serif;
+$stack-sans : 'Comfortaa', sans-serif;
 $stack-serif: 'Cinzel', serif;
 
 // Asset paths

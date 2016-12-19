@@ -1,17 +1,17 @@
 
-//Main Containers
+// Main Containers
 
 .main-area {
   min-height: 100vh;
   width: auto;
   @extend %flex-column;
-  @include background(url('#{$path-img}/.jpg'));
-  padding: 0 6em;
-  @media #{$med-screen} {
-    padding: 0 2em;
-  }
+  @include background(url('#{$path-img}/pizza-1.jpg'));
+  // @media #{$med-screen} {
+  //   padding: 0 2em;
+  // }
 
   .title {
     display: flex;
     align-items: center;
   }
+}

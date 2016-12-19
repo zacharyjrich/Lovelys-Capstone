@@ -1,3 +1,6 @@
+
+// Extends
+
 %border-box {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -21,27 +24,20 @@
   flex-direction: column;
 }
 
-// %panel-spec {
-//   padding: 2em;
-//   position: relative;
-//   justify-content: flex-end;
-//   @extend %flex-column;
+// %row-spec {
+//   display: flex;
+//   flex-wrap: wrap;
+//   height: 50vh;
+//   width: auto;
+//   @media #{$med-screen} {
+//     height: 100vh;
+//   }
+//   @media #{$sm-screen} {
+//     height: 100vh;
+//   }
 // }
 
-%row-spec {
-  display: flex;
-  flex-wrap: wrap;
-  height: 50vh;
-  width: auto;
-  @media #{$med-screen} {
-    height: 100vh;
-  }
-  @media #{$sm-screen} {
-    height: 100vh;
-  }
-}
-
 %hover-spec {
-  color: $orange;
+  // color: $orange;
   cursor: pointer
 }

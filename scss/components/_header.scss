@@ -1,0 +1,39 @@
+
+// Header
+
+.navbar {
+  height: 6em;
+  background-color: rgba($primary-color, .8);
+  @extend %nav-flex;
+  letter-spacing: 3px;
+
+  .logo-red {
+    color: $red;
+  }
+
+  .title {
+    img {
+    height: 6em;
+    padding-right: 2em;
+    }
+  }
+
+  h2 {
+    font-family: $stack-sans;
+  }
+
+  ul {
+    @extend %ul-spec;
+    padding: 0 6em;
+
+    li {
+      padding-left: 3em;
+      @media #{$med-screen} {
+        display: none;
+      }
+      &:hover {
+        @extend %hover-spec;
+      }
+    }
+  }
+}

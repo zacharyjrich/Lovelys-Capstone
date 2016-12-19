@@ -5,234 +5,54 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.navbar1, .navbar2 {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-.navbar1 ul, .navbar2 ul {
+.navbar ul {
   display: flex;
   list-style: none;
   padding-left: 0; }
 
-.second-area .row1 .rafting, .second-area .row1 .basecamp, .second-area .row1 .backpacking, .second-area .row2 .canoe, .second-area .row2 .photography, .second-area .row2 .custom, .main-area, .main-area .hero-area, .second-area, .inner-title {
+.main-area {
   display: flex;
   flex-direction: column; }
 
-.second-area .row1 .rafting, .second-area .row1 .basecamp, .second-area .row1 .backpacking, .second-area .row2 .canoe, .second-area .row2 .photography, .second-area .row2 .custom {
-  padding: 2em;
-  position: relative;
-  justify-content: flex-end; }
-
-.second-area .row1, .second-area .row2 {
-  display: flex;
-  flex-wrap: wrap;
-  height: 50vh;
-  width: auto; }
-  @media (max-width: 975px) {
-    .second-area .row1, .second-area .row2 {
-      height: 100vh; } }
-  @media (max-width: 550px) {
-    .second-area .row1, .second-area .row2 {
-      height: 100vh; } }
-
-.navbar1 ul #menu-icon1:hover, .navbar1 ul li:hover, .navbar2 ul #menu-icon2:hover, .navbar2 ul li:hover {
-  color: #FF8C00;
+.navbar ul li:hover {
   cursor: pointer; }
 
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   color: #fff; }
-  body p {
-    font-weight: bold;
-    margin: 0; }
-  @media (max-width: 975px) {
-    body li {
-      font-size: 80%; } }
 
 .main-area {
   min-height: 100vh;
   width: auto;
-  background: url("../img/hero-slide.jpg") no-repeat center;
-  background-size: cover;
-  padding: 0 6em; }
-  @media (max-width: 975px) {
-    .main-area {
-      padding: 0 2em; } }
+  background: url("../img/pizza-1.jpg") no-repeat center;
+  background-size: cover; }
   .main-area .title {
     display: flex;
     align-items: center; }
-  .main-area .hero-area {
-    align-items: center; }
-    .main-area .hero-area img {
-      height: 3em;
-      margin-bottom: 1em; }
-    .main-area .hero-area h1 {
-      font-family: "Cinzel", serif;
-      font-size: 7em;
-      text-align: center;
-      margin: 0; }
-      @media (max-width: 975px) {
-        .main-area .hero-area h1 {
-          font-size: 5em; } }
-    .main-area .hero-area .bar {
-      height: .3em;
-      width: 18em;
-      background-color: white; }
 
-.second-area .row1 .rafting {
-  flex-basis: 50%;
-  background: url("../img/raft.jpg") no-repeat center;
-  background-size: cover; }
-  @media (max-width: 975px) {
-    .second-area .row1 .rafting {
-      flex-basis: 100%; } }
-  @media (max-width: 550px) {
-    .second-area .row1 .rafting {
-      flex-basis: 100%; } }
-  .second-area .row1 .rafting .icon {
-    left: 45%; }
-.second-area .row1 .basecamp {
-  flex-basis: 25%;
-  background: url("../img/basecamp.jpg") no-repeat center;
-  background-size: cover; }
-  @media (max-width: 975px) {
-    .second-area .row1 .basecamp {
-      flex-basis: 50%; } }
-  @media (max-width: 550px) {
-    .second-area .row1 .basecamp {
-      flex-basis: 100%; } }
-.second-area .row1 .backpacking {
-  flex-basis: 25%;
-  background: url("../img/backpacking.jpg") no-repeat center;
-  background-size: cover; }
-  @media (max-width: 975px) {
-    .second-area .row1 .backpacking {
-      flex-basis: 50%; } }
-  @media (max-width: 550px) {
-    .second-area .row1 .backpacking {
-      flex-basis: 100%; } }
-.second-area .row2 .canoe {
-  flex-basis: 25%;
-  background: url("../img/canoe.jpg") no-repeat center;
-  background-size: cover; }
-  @media (max-width: 975px) {
-    .second-area .row2 .canoe {
-      flex-basis: 50%; } }
-  @media (max-width: 550px) {
-    .second-area .row2 .canoe {
-      flex-basis: 100%; } }
-.second-area .row2 .photography {
-  flex-basis: 25%;
-  background: url("../img/taking-photos.jpg") no-repeat center;
-  background-size: cover; }
-  @media (max-width: 975px) {
-    .second-area .row2 .photography {
-      flex-basis: 50%; } }
-  @media (max-width: 550px) {
-    .second-area .row2 .photography {
-      flex-basis: 100%; } }
-.second-area .row2 .custom {
-  flex-basis: 50%;
-  background: url("../img/custom.jpg") no-repeat center;
-  background-size: cover; }
-  @media (max-width: 975px) {
-    .second-area .row2 .custom {
-      flex-basis: 100%; } }
-  .second-area .row2 .custom .icon {
-    left: 45%; }
-
-.inner-title .small-break {
-  height: .2em;
-  width: 2.5em;
-  background-color: #FF8C00;
-  margin-bottom: .8em; }
-
-button {
-  margin-top: 10em;
-  border-style: none;
-  background-color: #FF8C00;
-  color: white;
-  border-radius: .5em;
-  padding: 1.5em;
-  font-size: 14px;
-  transition: all 200ms ease-in-out; }
-  @media (max-width: 975px) {
-    button {
-      transform: scale(0.8);
-      margin-top: 8em; } }
-  @media (max-width: 550px) {
-    button {
-      margin-top: 5em; } }
-  button:hover {
-    cursor: pointer;
-    background-color: rgba(255, 140, 0, 0.8);
-    transform: scale(1.1); }
-
-.icon {
-  height: 5em;
-  width: 5em;
-  padding: 8px;
-  position: absolute;
-  top: 42%;
-  left: 42%;
-  background-color: rgba(49, 42, 42, 0.7);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 200ms ease-in-out; }
-  @media (max-width: 550px) {
-    .icon {
-      display: none; } }
-  .icon:hover {
-    cursor: pointer;
-    transform: scale(1.3); }
-  .icon img {
-    height: 2.5em; }
-
-.navbar1 {
-  height: 12em; }
-  .navbar1 #paw-icon {
-    margin-right: .3em; }
-  .navbar1 h2 {
-    font-family: "Cinzel", serif; }
-  .navbar1 ul #menu-icon1 {
-    display: none; }
-    @media (max-width: 975px) {
-      .navbar1 ul #menu-icon1 {
-        display: block; } }
-  .navbar1 ul li {
-    padding-left: 2em; }
-    @media (max-width: 975px) {
-      .navbar1 ul li {
-        display: none; } }
-
-.navbar2 {
-  height: 5em;
-  background: #292727;
-  padding: 0 6em; }
-  @media (max-width: 975px) {
-    .navbar2 {
-      padding: 0 2em; } }
-  .navbar2 .search {
-    display: flex; }
-    .navbar2 .search p {
-      padding-right: 1em; }
-  .navbar2 ul #menu-icon2 {
-    display: none; }
-    @media (max-width: 550px) {
-      .navbar2 ul #menu-icon2 {
-        display: block; } }
-  .navbar2 ul li {
+.navbar {
+  height: 6em;
+  background-color: rgba(43, 45, 66, 0.8);
+  letter-spacing: 3px; }
+  .navbar .logo-red {
+    color: #CE1E34; }
+  .navbar .title img {
+    height: 6em;
     padding-right: 2em; }
-    @media (max-width: 550px) {
-      .navbar2 ul li {
-        display: none; } }
-    .navbar2 ul li:last-child {
-      color: #FF8C00;
-      border-left: 0.5px solid #aaa5a5;
-      padding-left: 2em; }
+  .navbar h2 {
+    font-family: "Comfortaa", sans-serif; }
+  .navbar ul {
+    padding: 0 6em; }
+    .navbar ul li {
+      padding-left: 3em; }
+      @media (max-width: 975px) {
+        .navbar ul li {
+          display: none; } }
 
 /*# sourceMappingURL=application.css.map */
