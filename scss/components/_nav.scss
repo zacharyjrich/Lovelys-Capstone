@@ -1,0 +1,25 @@
+
+//Navbar
+
+.navbar {
+  height: 12em;
+  @extend %nav-flex;
+
+  h2 {
+    font-family: $stack-serif;
+  }
+
+  ul {
+    @extend %ul-spec;
+
+    li {
+      padding-left: 2em;
+      @media #{$med-screen} {
+        display: none;
+      }
+      &:hover {
+        @extend %hover-spec;
+      }
+    }
+  }
+}

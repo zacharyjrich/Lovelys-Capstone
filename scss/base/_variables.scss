@@ -1,0 +1,24 @@
+// Descriptive color variables
+
+$white          : #fff;
+$black          : #000;
+$orange         : #FF8C00;
+$gray           : #292727;
+
+// Functional color variables
+
+// $background-color: $white;
+
+// Font stacks
+
+$stack-sans : 'Raleway', sans-serif;
+$stack-serif: 'Cinzel', serif;
+
+// Asset paths
+
+$path-img  : '../img';
+
+// Media query breakpoints
+
+$sm-screen  : '(max-width: 550px)';
+$med-screen : '(max-width: 975px)';

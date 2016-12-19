@@ -1,0 +1,47 @@
+%border-box {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+%nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%ul-spec {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// %panel-spec {
+//   padding: 2em;
+//   position: relative;
+//   justify-content: flex-end;
+//   @extend %flex-column;
+// }
+
+%row-spec {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50vh;
+  width: auto;
+  @media #{$med-screen} {
+    height: 100vh;
+  }
+  @media #{$sm-screen} {
+    height: 100vh;
+  }
+}
+
+%hover-spec {
+  color: $orange;
+  cursor: pointer
+}

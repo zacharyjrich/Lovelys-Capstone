@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  @extend %border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $stack-sans;
+  color: $white;
+  // p {
+  //   font-weight: bold;
+  //   margin: 0;
+  // }
+  // li {
+  //   @media #{$med-screen} {
+  //     font-size: 80%;
+  //   }
+  // }
+}
