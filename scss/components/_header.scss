@@ -6,6 +6,7 @@
   background-color: rgba($primary-color, .8);
   @extend %nav-flex;
   letter-spacing: 3px;
+  padding: 0 3em 0 2em;
 
   .logo-red {
     color: $red;
@@ -14,7 +15,7 @@
   .title {
     img {
     height: 6em;
-    padding-right: 2em;
+    padding-right: 1.5em;
     }
   }
 
@@ -24,10 +25,9 @@
 
   ul {
     @extend %ul-spec;
-    padding: 0 6em;
 
     li {
-      padding-left: 3em;
+      margin-left: 4em;
       @media #{$med-screen} {
         display: none;
       }

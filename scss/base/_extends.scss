@@ -24,20 +24,25 @@
   flex-direction: column;
 }
 
-// %row-spec {
-//   display: flex;
-//   flex-wrap: wrap;
-//   height: 50vh;
-//   width: auto;
-//   @media #{$med-screen} {
-//     height: 100vh;
-//   }
-//   @media #{$sm-screen} {
-//     height: 100vh;
-//   }
-// }
+%row-spec {
+  display: flex;
+  // justify-content: space-between;
+  // height: 50vh;
+  // @media #{$med-screen} {
+  //   height: 100vh;
+  // }
+  // @media #{$sm-screen} {
+  //   height: 100vh;
+  // }
+}
+
+%menu-flex {
+  display: flex;
+  // justify-content: space-between;
+  flex-flow: row wrap;
+}
 
 %hover-spec {
-  // color: $orange;
+  color: lighten($red, 10%);
   cursor: pointer
 }

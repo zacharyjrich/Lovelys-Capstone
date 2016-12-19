@@ -1,7 +1,7 @@
 
 // Main Containers
 
-.main-area {
+.hero-area {
   min-height: 100vh;
   width: auto;
   @extend %flex-column;
@@ -14,4 +14,39 @@
     display: flex;
     align-items: center;
   }
+}
+
+//Hero Area Ends
+
+.menu {
+  min-height: 150vh;
+  width: auto;
+  color: $dark-blue;
+  display: flex;
+  flex-flow: column;
+  padding: 5em;
+  align-items: center;
+  h2 {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    padding-left: 5em;
+    li {
+      padding-top: 1em;
+    }
+  }
+
+  .row {
+    @extend %row-spec;
+    justify-content: space-around;
+  }
+
+  .starters, .salads, .pizzas, .icecream, .drinks {
+    @extend %menu-flex;
+    margin-top: 2em;
+  }
+
+
 }

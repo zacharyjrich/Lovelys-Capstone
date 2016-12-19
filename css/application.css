@@ -15,11 +15,19 @@
   list-style: none;
   padding-left: 0; }
 
-.main-area {
+.hero-area {
   display: flex;
   flex-direction: column; }
 
+.menu .row {
+  display: flex; }
+
+.menu .starters, .menu .salads, .menu .pizzas, .menu .icecream, .menu .drinks {
+  display: flex;
+  flex-flow: row wrap; }
+
 .navbar ul li:hover {
+  color: #e33c51;
   cursor: pointer; }
 
 body {
@@ -27,32 +35,52 @@ body {
   font-family: "Comfortaa", sans-serif;
   color: #fff; }
 
-.main-area {
+.hero-area {
   min-height: 100vh;
   width: auto;
   background: url("../img/pizza-1.jpg") no-repeat center;
   background-size: cover; }
-  .main-area .title {
+  .hero-area .title {
     display: flex;
     align-items: center; }
+
+.menu {
+  min-height: 150vh;
+  width: auto;
+  color: #2B2D42;
+  display: flex;
+  flex-flow: column;
+  padding: 5em;
+  align-items: center; }
+  .menu h2 {
+    flex-basis: 100%;
+    text-align: center; }
+  .menu ul {
+    list-style: none;
+    padding-left: 5em; }
+    .menu ul li {
+      padding-top: 1em; }
+  .menu .row {
+    justify-content: space-around; }
+  .menu .starters, .menu .salads, .menu .pizzas, .menu .icecream, .menu .drinks {
+    margin-top: 2em; }
 
 .navbar {
   height: 6em;
   background-color: rgba(43, 45, 66, 0.8);
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  padding: 0 3em 0 2em; }
   .navbar .logo-red {
     color: #CE1E34; }
   .navbar .title img {
     height: 6em;
-    padding-right: 2em; }
+    padding-right: 1.5em; }
   .navbar h2 {
     font-family: "Comfortaa", sans-serif; }
-  .navbar ul {
-    padding: 0 6em; }
-    .navbar ul li {
-      padding-left: 3em; }
-      @media (max-width: 975px) {
-        .navbar ul li {
-          display: none; } }
+  .navbar ul li {
+    margin-left: 4em; }
+    @media (max-width: 975px) {
+      .navbar ul li {
+        display: none; } }
 
 /*# sourceMappingURL=application.css.map */
