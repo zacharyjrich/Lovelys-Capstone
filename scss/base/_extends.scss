@@ -22,23 +22,16 @@
 %flex-column {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 %row-spec {
   display: flex;
-  // justify-content: space-between;
-  // height: 50vh;
-  // @media #{$med-screen} {
-  //   height: 100vh;
-  // }
-  // @media #{$sm-screen} {
-  //   height: 100vh;
-  // }
+  flex-wrap: wrap;
 }
 
 %menu-flex {
   display: flex;
-  // justify-content: space-between;
   flex-flow: row wrap;
 }
 

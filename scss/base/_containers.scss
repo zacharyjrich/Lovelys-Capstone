@@ -4,11 +4,7 @@
 .hero-area {
   min-height: 100vh;
   width: auto;
-  @extend %flex-column;
   @include background(url('#{$path-img}/pizza-1.jpg'));
-  // @media #{$med-screen} {
-  //   padding: 0 2em;
-  // }
 
   .title {
     display: flex;
@@ -24,15 +20,17 @@
   color: $dark-blue;
   display: flex;
   flex-flow: column;
-  padding: 5em;
+  padding: 2em;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   h2 {
     flex-basis: 100%;
     text-align: center;
   }
   ul {
     list-style: none;
-    padding-left: 5em;
+    padding: 0;
     li {
       padding-top: 1em;
     }
@@ -43,10 +41,24 @@
     justify-content: space-around;
   }
 
-  .starters, .salads, .pizzas, .icecream, .drinks {
+  .starters, .salads, .icecream, .drinks {
     @extend %menu-flex;
+    @extend %flex-column;
     margin-top: 2em;
+    flex-basis: 50%;
+    @media #{$med-screen} {
+     flex-basis: 100%;
+    }
   }
+
+   .pizzas {
+     @extend %menu-flex;
+     @extend %flex-column;
+     flex-basis: 100%;
+     @media #{$med-screen} {
+      flex-basis: 75%;
+     }
+   }
 
 
 }

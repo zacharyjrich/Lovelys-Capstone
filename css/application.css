@@ -15,14 +15,16 @@
   list-style: none;
   padding-left: 0; }
 
-.hero-area {
+.menu .starters, .menu .salads, .menu .icecream, .menu .drinks, .menu .pizzas {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
 
 .menu .row {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
-.menu .starters, .menu .salads, .menu .pizzas, .menu .icecream, .menu .drinks {
+.menu .starters, .menu .salads, .menu .icecream, .menu .drinks, .menu .pizzas {
   display: flex;
   flex-flow: row wrap; }
 
@@ -50,20 +52,31 @@ body {
   color: #2B2D42;
   display: flex;
   flex-flow: column;
-  padding: 5em;
-  align-items: center; }
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
   .menu h2 {
     flex-basis: 100%;
     text-align: center; }
   .menu ul {
     list-style: none;
-    padding-left: 5em; }
+    padding: 0; }
     .menu ul li {
       padding-top: 1em; }
   .menu .row {
     justify-content: space-around; }
-  .menu .starters, .menu .salads, .menu .pizzas, .menu .icecream, .menu .drinks {
-    margin-top: 2em; }
+  .menu .starters, .menu .salads, .menu .icecream, .menu .drinks {
+    margin-top: 2em;
+    flex-basis: 50%; }
+    @media (max-width: 975px) {
+      .menu .starters, .menu .salads, .menu .icecream, .menu .drinks {
+        flex-basis: 100%; } }
+  .menu .pizzas {
+    flex-basis: 100%; }
+    @media (max-width: 975px) {
+      .menu .pizzas {
+        flex-basis: 75%; } }
 
 .navbar {
   height: 6em;
