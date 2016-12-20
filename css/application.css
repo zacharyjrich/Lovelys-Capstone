@@ -14,7 +14,7 @@
   list-style: none;
   padding-left: 0; }
 
-.menu-area, .menu-area .starters, .menu-area .salads, .menu-area .icecream, .menu-area .drinks, .menu-area .pizzas, .location-area .social {
+.menu-area, .menu-area .starters, .menu-area .salads, .menu-area .icecream, .menu-area .drinks, .menu-area .pizzas, .location-area .social, .about-area {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -96,6 +96,29 @@ body {
     .location-area .social .icons {
       display: flex;
       justify-content: space-between; }
+
+.about-area {
+  min-height: 100vh;
+  color: #2B2D42;
+  text-align: center;
+  align-items: center;
+  padding: 2em; }
+  .about-area h1 {
+    margin-bottom: 2em; }
+  .about-area h3 {
+    margin: 1.5em 0; }
+  .about-area img {
+    height: 7em; }
+  .about-area .about-column {
+    flex-basis: 30%; }
+  .about-area .about-wrap {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between; }
+  .about-area p {
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    text-align: left; }
 
 .navbar {
   height: 6em;
