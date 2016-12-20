@@ -108,7 +108,9 @@ body {
   .about-area h3 {
     margin: 1.5em 0; }
   .about-area img {
-    height: 7em; }
+    height: 8em;
+    width: auto;
+    align-items: baseline; }
   .about-area .about-column {
     flex-basis: 30%; }
   .about-area .about-wrap {
