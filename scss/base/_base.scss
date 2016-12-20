@@ -11,10 +11,14 @@ body {
   margin: 0;
   font-family: $stack-sans;
   color: $white;
-  // p {
-  //   font-weight: bold;
-  //   margin: 0;
-  // }
+  p {
+    margin: 0;
+    line-height: 2em;
+    letter-spacing: 2px;
+  }
+  h1, h2 {
+    letter-spacing: 2px;
+  }
   // li {
   //   @media #{$med-screen} {
   //     font-size: 80%;
