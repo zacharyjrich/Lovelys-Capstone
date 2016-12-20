@@ -94,17 +94,17 @@
   @extend %flex-column;
   text-align: center;
   align-items: center;
-  padding: 2em;
+  padding: 3em 2em;
   h1 {
     margin-bottom: 2em;
   }
   h3 {
     margin: 1.5em 0;
+    letter-spacing: 2px;
   }
   img {
     height: 8em;
     width: auto;
-    align-items: baseline;
   }
 
   .about-column {
@@ -120,4 +120,11 @@
     letter-spacing: 2px;
     text-align: left;
   }
+}
+
+//About Area Ends
+
+.gallery {
+  min-height: 100vh;
+  background-color: $primary-color;
 }

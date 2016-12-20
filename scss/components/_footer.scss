@@ -1,2 +1,12 @@
 
 // Footer
+
+.footer {
+  height: 5em;
+  padding: 0 2em;
+  background-color: $third-color;
+  @extend %nav-flex;
+  a {
+    padding-left: 1em;
+  }
+}
