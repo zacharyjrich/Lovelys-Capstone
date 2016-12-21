@@ -1,8 +1,10 @@
 
-// Header
+//Navbar
 
 .navbar {
   height: 6em;
+  width: 100%;
+  position: absolute;
   background-color: rgba($primary-color, .8);
   @extend %nav-flex;
   letter-spacing: 3px;

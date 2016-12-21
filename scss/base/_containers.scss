@@ -4,7 +4,34 @@
 .hero-area {
   min-height: 100vh;
   width: auto;
+  position: relative;
   @include background(url('#{$path-img}/pizza-1.jpg'));
+
+  .hero-background {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    z-index: 0;
+
+    @include keyframes(photo-slider) {
+      0% { @include background(url('#{$path-img}/pizza-1.jpg')); }
+
+      20% { @include background(url('#{$path-img}/pizza-4.jpg')); }
+
+      40% { @include background(url('#{$path-img}/pizza-5.jpg')); }
+
+      60% { @include background(url('#{$path-img}/pizza-2.jpg')); }
+
+      80% { @include background(url('#{$path-img}/icecream.jpg')); }
+
+      100% { @include background(url('#{$path-img}/pizza-1.jpg'));}
+    }
+    @include animation(photo-slider ease-in-out 30s both infinite);
+  }
 
   .title {
     display: flex;
@@ -22,7 +49,6 @@
   @extend %flex-column;
   padding: 5em;
   align-items: center;
-  text-align: center;
   h1 {
     text-decoration: underline;
     margin-top: 2em;
@@ -33,6 +59,7 @@
   }
   ul {
     @extend %ul-spec;
+
     li {
       padding-top: 1em;
     }
@@ -59,7 +86,7 @@
     margin-top: 2em;
     flex-basis: 100%;
     @media #{$med-screen} {
-    flex-basis: 75%;
+      // flex-basis: 75%;
     }
   }
 }
@@ -93,14 +120,13 @@
   color: $primary-color;
   @extend %flex-column;
   text-align: center;
-  align-items: center;
+  // align-items: center;
   padding: 3em 2em;
   h1 {
     margin-bottom: 2em;
   }
   h3 {
-    margin: 1.5em 0;
-    letter-spacing: 2px;
+    margin: 2em 0;
   }
   img {
     height: 8em;
@@ -116,65 +142,9 @@
     justify-content: space-between;
   }
   p {
-    line-height: 1.5em;
-    letter-spacing: 2px;
     text-align: left;
+    font-family: $stack-serif;
   }
 }
 
 //About Area Ends
-
-.gallery {
-  // display: table;
-  height: 100vh;
-  width: auto;
-  margin: 0 auto;
-  position: relative;
-  background-color: $primary-color;
-
-  .banner-bg{
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    z-index:0;
-
-    @include keyframes(slider-lg) {
-      0%{
-      background-image: url(../img/pizza-2.jpg);
-      }
-      20%{
-      background-image: url(../img/pizza-3.jpg);
-      }
-      40%{
-      background-image: url(../img/pizza-4.jpg);
-      }
-      60%{
-      background-image: url(../img/pizza-5.jpg);
-      }
-      80%{
-      background-image: url(../img/icecream.jpg);
-      }
-      100%{
-      background-image: url(../img/pizza-2.jpg);
-      }
-    }
-
-    // /*-- Fallback image for mobile --*/
-    // background-image:	url(../images/banner-1-sm.jpg);
-    //
-    // /*-- Add mobile keyframe animation --*/
-    // @include animation(slider-sm ease-in-out 30s both infinite);
-    //
-    // @media (min-width: 32ems) {
-    // /*-- Fallback image for desktop --*/
-    // background-image:url(../images/banner-1.jpg);
-    //
-    /*-- Add desktop keyframe animation via bourbon mixin --*/
-    @include animation(slider-lg ease-in-out 20s both infinite);
-
-  }
-}
