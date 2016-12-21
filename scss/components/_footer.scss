@@ -9,4 +9,11 @@
   a {
     padding-left: 1em;
   }
+  .go-top img {
+    position: fixed;
+    height: 1em;
+    bottom: 2em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

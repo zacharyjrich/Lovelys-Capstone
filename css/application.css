@@ -41,6 +41,9 @@ body {
     letter-spacing: 1px; }
   body h1, body h2, body h3 {
     letter-spacing: 2px; }
+  body a {
+    color: inherit;
+    text-decoration: none; }
 
 .hero-area {
   min-height: 100vh;
@@ -211,5 +214,11 @@ body {
   background-color: #848FA3; }
   .footer a {
     padding-left: 1em; }
+  .footer .go-top img {
+    position: fixed;
+    height: 1em;
+    bottom: 2em;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=application.css.map */

@@ -12,7 +12,7 @@
     <title>Lovely's Fifty Fifty</title>
   </head>
   <body>
-    <div class="hero-area">
+    <div class="hero-area" id="hero">
       <div class="hero-background"></div>
       <div class="navbar">
         <div class="title">
@@ -20,15 +20,15 @@
           <h2>Lovely's Fifty<span class="logo-red">Fifty</span></h2>
         </div>
         <ul>
-          <li>MENU</li>
-          <li>ABOUT</li>
-          <li>VISIT</li>
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#visit">VISIT</a></li>
           <!-- <i class="fa fa-bars fa-lg" id="menu-icon" aria-hidden="true"></i> -->
         </ul>
       </div>
     </div>
 
-    <div class="menu-area">
+    <div class="menu-area" id="menu">
       <h1>Menu</h1>
       <div class="row">
         <div class="starters">
@@ -84,7 +84,7 @@
       </div>
     </div>
 
-    <div class="location-area">
+    <div class="location-area" id="visit">
       <div class="map-address">
         <h1>LOCATION</h1>
         <p>4039 N Mississippi Ave Unit 101</p>
@@ -106,7 +106,7 @@
       </div>
     </div>
 
-    <div class="about-area">
+    <div class="about-area" id="about">
       <h1>ABOUT</h1>
       <div class="about-wrap">
         <div class="about-column">
@@ -130,8 +130,7 @@
     <div class="footer">
       <p>Copyright 2016</p>
       <div class="to-top">
-        <img src="" alt="">
-        <p>Return to top</p>
+        <a href="#hero" class="go-top"><img src="img/arrow.png" alt=""></a>
       </div>
       <div class="footer-social">
         <div class="icons">
