@@ -212,13 +212,14 @@ body {
   height: 5em;
   padding: 0 2em;
   background-color: #848FA3; }
-  .footer a {
+  .footer .icons a {
     padding-left: 1em; }
-  .footer .go-top img {
+  .footer #go-top {
     position: fixed;
-    height: 1em;
-    bottom: 2em;
+    bottom: .3em;
     left: 50%;
     transform: translate(-50%, -50%); }
+    .footer #go-top img {
+      height: 2em; }
 
 /*# sourceMappingURL=application.css.map */

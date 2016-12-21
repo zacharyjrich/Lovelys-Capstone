@@ -6,14 +6,16 @@
   padding: 0 2em;
   background-color: $third-color;
   @extend %nav-flex;
-  a {
+  .icons a {
     padding-left: 1em;
   }
-  .go-top img {
+  #go-top {
     position: fixed;
-    height: 1em;
-    bottom: 2em;
+    bottom: .3em;
     left: 50%;
     transform: translate(-50%, -50%);
+    img {
+      height: 2em;
+    }
   }
 }
