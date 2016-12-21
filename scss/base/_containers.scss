@@ -124,85 +124,16 @@
 
 //About Area Ends
 
-// .gallery {
-//   display: table;
-//   width: 100%;
-//   margin: 0 auto;
-//   height: 100vh;
-//   position: relative;
-//
-//   @include keyframes(fade-out) {
-//     33%{
-//      opacity: 1
-//     }
-//     66%{
-//     opacity: 0
-//     }
-//   }
-//
-//   li {
-//     height: 100%;
-//     width: 100%;
-//     position: absolute;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position:	100%;
-//     z-index: 0;
-//     opacity: 0;
-//     /*-- Add animation --*/
-//     @include animation(fade-out 15s infinite both);
-//     /*-- Image 1: small --*/
-//     background-image: url(../img/pizza-3.jpg);
-//     // @media (min-width: 32ems){
-//     // /*-- Image 1: large --*/
-//     // background-image: url(../images/banner-1.jpg);
-//     // }
-//   }
-// /*-- Image 2 --*/
-//   li:nth-child(2) {
-//     background-image: url(../img/pizza-4.jpg);
-//     /*-- Animation delay: 3s --*/
-//     @include animation-delay(12s);
-//     // @media (min-width: 32ems){
-//     //  background-image: url(../images/banner-2.jpg);
-//     // }
-//   }
-//   /*-- Image 3 --*/
-//   li:nth-child(3){
-//     background-image: url(../img/pizza-5.jpg);
-//     /* Animation delay: 6s */
-//     @include animation-delay(9s);
-//     // @media (min-width: 32ems){
-//     //  background-image: url(../images/banner-3.jpg);
-//     // }
-//   }
-//   li:nth-child(4){
-//     background-image: url(../img/pizza-2.jpg);
-//     /* Animation delay: 6s */
-//     @include animation-delay(6s);
-//     // @media (min-width: 32ems){
-//     //  background-image: url(../images/banner-3.jpg);
-//     // }
-//   }
-//   li:nth-child(5){
-//     background-image: url(../img/sarah.jpg);
-//     /* Animation delay: 6s */
-//     @include animation-delay(3s);
-//     // @media (min-width: 32ems){
-//     //  background-image: url(../images/banner-3.jpg);
-//     // }
-//   }
-// }
-
 .gallery {
   // display: table;
-  width: 100%;
-  margin: 0 auto;
   height: 100vh;
+  width: auto;
+  margin: 0 auto;
   position: relative;
+  background-color: $primary-color;
 
   .banner-bg{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: absolute;
     top: 0;
