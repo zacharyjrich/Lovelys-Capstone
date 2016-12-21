@@ -123,9 +123,62 @@ body {
     text-align: left; }
 
 .gallery {
-  min-height: 100vh;
-  background-color: #2B2D42; }
-
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative; }
+  .gallery .banner-bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    z-index: 0;
+    /*-- Add desktop keyframe animation via bourbon mixin --*/
+    -webkit-animation: slider-lg ease-in-out 20s both infinite;
+    -moz-animation: slider-lg ease-in-out 20s both infinite;
+    animation: slider-lg ease-in-out 20s both infinite; }
+@-webkit-keyframes slider-lg {
+  0% {
+    background-image: url(../img/pizza-2.jpg); }
+  20% {
+    background-image: url(../img/pizza-3.jpg); }
+  40% {
+    background-image: url(../img/pizza-4.jpg); }
+  60% {
+    background-image: url(../img/pizza-5.jpg); }
+  80% {
+    background-image: url(../img/icecream.jpg); }
+  100% {
+    background-image: url(../img/pizza-2.jpg); } }
+@-moz-keyframes slider-lg {
+  0% {
+    background-image: url(../img/pizza-2.jpg); }
+  20% {
+    background-image: url(../img/pizza-3.jpg); }
+  40% {
+    background-image: url(../img/pizza-4.jpg); }
+  60% {
+    background-image: url(../img/pizza-5.jpg); }
+  80% {
+    background-image: url(../img/icecream.jpg); }
+  100% {
+    background-image: url(../img/pizza-2.jpg); } }
+@keyframes slider-lg {
+  0% {
+    background-image: url(../img/pizza-2.jpg); }
+  20% {
+    background-image: url(../img/pizza-3.jpg); }
+  40% {
+    background-image: url(../img/pizza-4.jpg); }
+  60% {
+    background-image: url(../img/pizza-5.jpg); }
+  80% {
+    background-image: url(../img/icecream.jpg); }
+  100% {
+    background-image: url(../img/pizza-2.jpg); } }
 .navbar {
   height: 6em;
   background-color: rgba(43, 45, 66, 0.8);
