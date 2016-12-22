@@ -18,9 +18,9 @@ This project is a redesign of the website for Portland restaurant, Lovely's Fift
 
 ## Setup/Installation Requirements
 
-1) Check it out here https://zacharyjrich.github.io/
+1) Check it out here https://zacharyjrich.github.io/Lovelys-Capstone
 
-2) Or clone this repository https://github.com/zacharyjrich/
+2) Or clone this repository https://github.com/zacharyjrich/Lovelys-Capstone
 
 ## Known Bugs
 
