@@ -38,7 +38,8 @@ body {
   body p {
     margin: 0;
     line-height: 1.5em;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    font-size: 14px; }
   body h1, body h2, body h3 {
     letter-spacing: 2px; }
   body a {
@@ -49,35 +50,31 @@ body {
   min-height: 100vh;
   width: auto;
   position: relative;
-  background: url("../img/pizza-1.jpg") no-repeat center;
-  background-size: cover; }
+  background-color: #2B2D42; }
   .hero-area .hero-background {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100%;
     z-index: 0;
-    -webkit-animation: photo-slider ease-in-out 30s both infinite;
-    -moz-animation: photo-slider ease-in-out 30s both infinite;
-    animation: photo-slider ease-in-out 30s both infinite; }
+    -webkit-animation: photo-slider ease-in-out 25s both infinite;
+    -moz-animation: photo-slider ease-in-out 25s both infinite;
+    animation: photo-slider ease-in-out 25s both infinite; }
 @-webkit-keyframes photo-slider {
   0% {
     background: url("../img/pizza-1.jpg") no-repeat center;
     background-size: cover; }
   20% {
-    background: url("../img/pizza-4.jpg") no-repeat center;
+    background: url("../img/pizza-2.png") no-repeat center;
     background-size: cover; }
   40% {
-    background: url("../img/pizza-5.jpg") no-repeat center;
+    background: url("../img/pizza-3.jpg") no-repeat center;
     background-size: cover; }
   60% {
-    background: url("../img/pizza-2.jpg") no-repeat center;
+    background: url("../img/pizza-6.png") no-repeat center;
     background-size: cover; }
   80% {
-    background: url("../img/icecream.jpg") no-repeat center;
+    background: url("../img/icecream.png") no-repeat center;
     background-size: cover; }
   100% {
     background: url("../img/pizza-1.jpg") no-repeat center;
@@ -87,16 +84,16 @@ body {
     background: url("../img/pizza-1.jpg") no-repeat center;
     background-size: cover; }
   20% {
-    background: url("../img/pizza-4.jpg") no-repeat center;
+    background: url("../img/pizza-2.png") no-repeat center;
     background-size: cover; }
   40% {
-    background: url("../img/pizza-5.jpg") no-repeat center;
+    background: url("../img/pizza-3.jpg") no-repeat center;
     background-size: cover; }
   60% {
-    background: url("../img/pizza-2.jpg") no-repeat center;
+    background: url("../img/pizza-6.png") no-repeat center;
     background-size: cover; }
   80% {
-    background: url("../img/icecream.jpg") no-repeat center;
+    background: url("../img/icecream.png") no-repeat center;
     background-size: cover; }
   100% {
     background: url("../img/pizza-1.jpg") no-repeat center;
@@ -106,16 +103,16 @@ body {
     background: url("../img/pizza-1.jpg") no-repeat center;
     background-size: cover; }
   20% {
-    background: url("../img/pizza-4.jpg") no-repeat center;
+    background: url("../img/pizza-2.png") no-repeat center;
     background-size: cover; }
   40% {
-    background: url("../img/pizza-5.jpg") no-repeat center;
+    background: url("../img/pizza-3.jpg") no-repeat center;
     background-size: cover; }
   60% {
-    background: url("../img/pizza-2.jpg") no-repeat center;
+    background: url("../img/pizza-6.png") no-repeat center;
     background-size: cover; }
   80% {
-    background: url("../img/icecream.jpg") no-repeat center;
+    background: url("../img/icecream.png") no-repeat center;
     background-size: cover; }
   100% {
     background: url("../img/pizza-1.jpg") no-repeat center;
@@ -170,7 +167,7 @@ body {
   min-height: 100vh;
   color: #2B2D42;
   text-align: center;
-  padding: 3em 2em; }
+  padding: 2em; }
   .about-area h1 {
     margin-bottom: 2em; }
   .about-area h3 {
@@ -194,9 +191,9 @@ body {
   position: absolute;
   background-color: rgba(43, 45, 66, 0.8);
   letter-spacing: 3px;
-  padding: 0 3em 0 2em; }
+  padding: 0 4em 0 2em; }
   .navbar .logo-red {
-    color: #CE1E34; }
+    color: #e33c51; }
   .navbar .title img {
     height: 6em;
     padding-right: 1.5em; }
@@ -210,15 +207,16 @@ body {
 
 .footer {
   height: 5em;
-  padding: 0 2em;
+  padding: 0 4em;
   background-color: #848FA3; }
   .footer .icons a {
-    padding-left: 1em; }
+    padding-left: 2em; }
   .footer #go-top {
     position: fixed;
     bottom: .3em;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    display: none; }
     .footer #go-top img {
       height: 2em; }
 

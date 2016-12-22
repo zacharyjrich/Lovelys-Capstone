@@ -5,32 +5,30 @@
   min-height: 100vh;
   width: auto;
   position: relative;
-  @include background(url('#{$path-img}/pizza-1.jpg'));
+  background-color: $primary-color;
+  // @include background(url('#{$path-img}/pizza-1.jpg'));
 
   .hero-background {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100%;
     z-index: 0;
 
     @include keyframes(photo-slider) {
       0% { @include background(url('#{$path-img}/pizza-1.jpg')); }
 
-      20% { @include background(url('#{$path-img}/pizza-4.jpg')); }
+      20% { @include background(url('#{$path-img}/pizza-2.png')); }
 
-      40% { @include background(url('#{$path-img}/pizza-5.jpg')); }
+      40% { @include background(url('#{$path-img}/pizza-3.jpg')); }
 
-      60% { @include background(url('#{$path-img}/pizza-2.jpg')); }
+      60% { @include background(url('#{$path-img}/pizza-6.png')); }
 
-      80% { @include background(url('#{$path-img}/icecream.jpg')); }
+      80% { @include background(url('#{$path-img}/icecream.png')); }
 
       100% { @include background(url('#{$path-img}/pizza-1.jpg'));}
     }
-    @include animation(photo-slider ease-in-out 30s both infinite);
+    @include animation(photo-slider ease-in-out 25s both infinite);
   }
 
   .title {
@@ -121,7 +119,7 @@
   @extend %flex-column;
   text-align: center;
   // align-items: center;
-  padding: 3em 2em;
+  padding: 2em;
   h1 {
     margin-bottom: 2em;
   }
