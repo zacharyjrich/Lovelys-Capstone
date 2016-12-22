@@ -8,28 +8,28 @@
   // background-color: $primary-color;
   @include background(url('#{$path-img}/pizza-1.jpg'));
 
-  // .hero-background {
-  //   height: 100%;
-  //   width: 100%;
-  //   position: absolute;
-  //   top: 0;
-  //   z-index: 0;
-  //
-  //   @include keyframes(photo-slider) {
-  //     0% { @include background(url('#{$path-img}/pizza-1.jpg')); }
-  //
-  //     20% { @include background(url('#{$path-img}/pizza-2.png')); }
-  //
-  //     40% { @include background(url('#{$path-img}/pizza-3.jpg')); }
-  //
-  //     60% { @include background(url('#{$path-img}/pizza-6.png')); }
-  //
-  //     80% { @include background(url('#{$path-img}/icecream.png')); }
-  //
-  //     100% { @include background(url('#{$path-img}/pizza-1.jpg'));}
-  //   }
-  //   @include animation(photo-slider ease-in-out 25s both infinite);
-  // }
+  .hero-background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+
+    @include keyframes(photo-slider) {
+      0% { @include background(url('#{$path-img}/pizza-1.jpg')); }
+
+      20% { @include background(url('#{$path-img}/pizza-2.png')); }
+
+      40% { @include background(url('#{$path-img}/pizza-3.jpg')); }
+
+      60% { @include background(url('#{$path-img}/pizza-6.png')); }
+
+      80% { @include background(url('#{$path-img}/icecream.png')); }
+
+      100% { @include background(url('#{$path-img}/pizza-1.jpg'));}
+    }
+    @include animation(photo-slider ease-in-out 25s both infinite);
+  }
 
   .title {
     display: flex;

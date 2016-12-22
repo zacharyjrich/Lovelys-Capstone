@@ -20,4 +20,7 @@ $(document).ready(function(){
 			$('#go-top').fadeOut(200);
 		}
 	});
+  // $('#menu-icon').click(function() {
+  //   $('ul.menu').show(1,0);
+  // });
 });

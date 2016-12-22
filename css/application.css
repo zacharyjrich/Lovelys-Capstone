@@ -5,12 +5,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.navbar, .footer {
+.navbar, .navbar .menu, .footer {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-.menu-area ul, .navbar ul {
+.menu-area ul, .navbar .menu ul {
   list-style: none;
   padding-left: 0; }
 
@@ -27,7 +27,7 @@
   display: flex;
   flex-flow: row wrap; }
 
-.navbar ul li:hover {
+.navbar .menu ul li:hover {
   color: #e33c51;
   cursor: pointer; }
 
@@ -52,6 +52,72 @@ body {
   position: relative;
   background: url("../img/pizza-1.jpg") no-repeat center;
   background-size: cover; }
+  .hero-area .hero-background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    -webkit-animation: photo-slider ease-in-out 25s both infinite;
+    -moz-animation: photo-slider ease-in-out 25s both infinite;
+    animation: photo-slider ease-in-out 25s both infinite; }
+@-webkit-keyframes photo-slider {
+  0% {
+    background: url("../img/pizza-1.jpg") no-repeat center;
+    background-size: cover; }
+  20% {
+    background: url("../img/pizza-2.png") no-repeat center;
+    background-size: cover; }
+  40% {
+    background: url("../img/pizza-3.jpg") no-repeat center;
+    background-size: cover; }
+  60% {
+    background: url("../img/pizza-6.png") no-repeat center;
+    background-size: cover; }
+  80% {
+    background: url("../img/icecream.png") no-repeat center;
+    background-size: cover; }
+  100% {
+    background: url("../img/pizza-1.jpg") no-repeat center;
+    background-size: cover; } }
+@-moz-keyframes photo-slider {
+  0% {
+    background: url("../img/pizza-1.jpg") no-repeat center;
+    background-size: cover; }
+  20% {
+    background: url("../img/pizza-2.png") no-repeat center;
+    background-size: cover; }
+  40% {
+    background: url("../img/pizza-3.jpg") no-repeat center;
+    background-size: cover; }
+  60% {
+    background: url("../img/pizza-6.png") no-repeat center;
+    background-size: cover; }
+  80% {
+    background: url("../img/icecream.png") no-repeat center;
+    background-size: cover; }
+  100% {
+    background: url("../img/pizza-1.jpg") no-repeat center;
+    background-size: cover; } }
+@keyframes photo-slider {
+  0% {
+    background: url("../img/pizza-1.jpg") no-repeat center;
+    background-size: cover; }
+  20% {
+    background: url("../img/pizza-2.png") no-repeat center;
+    background-size: cover; }
+  40% {
+    background: url("../img/pizza-3.jpg") no-repeat center;
+    background-size: cover; }
+  60% {
+    background: url("../img/pizza-6.png") no-repeat center;
+    background-size: cover; }
+  80% {
+    background: url("../img/icecream.png") no-repeat center;
+    background-size: cover; }
+  100% {
+    background: url("../img/pizza-1.jpg") no-repeat center;
+    background-size: cover; } }
   .hero-area .title {
     display: flex;
     align-items: center; }
@@ -185,24 +251,31 @@ body {
     @media (max-width: 550px) {
       .navbar .title img {
         display: none; } }
-  .navbar ul {
-    display: flex;
-    align-items: center; }
-    .navbar ul #menu-icon {
-      display: none;
+  .navbar .menu {
+    position: relative; }
+    @media (max-width: 900px) {
+      .navbar .menu:hover ul {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: -30px; } }
+    .navbar .menu #menu-icon {
       transition: .2s ease; }
-      .navbar ul #menu-icon:hover {
+      .navbar .menu #menu-icon:hover {
         cursor: pointer;
         transform: rotate(90deg);
         color: #CE1E34; }
-      @media (max-width: 900px) {
-        .navbar ul #menu-icon {
-          display: block; } }
-    .navbar ul li {
-      margin-left: 4em; }
-      @media (max-width: 900px) {
-        .navbar ul li {
+      @media (min-width: 900px) {
+        .navbar .menu #menu-icon {
           display: none; } }
+    .navbar .menu ul {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 900px) {
+        .navbar .menu ul {
+          display: none; } }
+      .navbar .menu ul li {
+        margin-left: 4em; }
 
 .footer {
   height: 4em;

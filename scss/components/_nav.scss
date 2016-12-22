@@ -25,31 +25,50 @@
       }
     }
   }
-
-  ul {
-    @extend %ul-spec;
-    display: flex;
-    // justify-content: center;
-    align-items: center;
-    #menu-icon {
-      display: none;
-      transition: .2s ease;
+  .menu {
+    @extend %nav-flex;
+    position: relative;
+    @media #{$med-screen} {
       &:hover {
+        ul {
+          display: block;
+          position: absolute;
+          right: 30px;
+          top: -30px;
+        }
+      }
+    }
+    #menu-icon {
+      transition: .2s ease;
+        &:hover {
         cursor: pointer;
         transform: rotate(90deg);
         color: $second-color;
       }
-      @media #{$med-screen} {
-        display: block;
-      }
-    }
-    li {
-      margin-left: 4em;
-      @media #{$med-screen} {
+      @media #{$lg-screen} {
         display: none;
       }
-      &:hover {
-        @extend %hover-spec;
+    }
+
+    ul {
+      @extend %ul-spec;
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      @media #{$med-screen} {
+        display: none;
+        // &:hover {
+        // }
+      }
+
+      li {
+        margin-left: 4em;
+        &:hover {
+          @extend %hover-spec;
+        }
+        @media #{$med-screen} {
+          // display: none;
+        }
       }
     }
   }
