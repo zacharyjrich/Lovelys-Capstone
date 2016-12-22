@@ -8,22 +8,41 @@
   background-color: rgba($primary-color, .8);
   @extend %nav-flex;
   letter-spacing: 3px;
-  padding: 0 4em 0 2em;
-
+  padding: 0 2em;
+  @media #{$med-screen} {
+    padding: 0 1em;
+  }
   .logo-red {
     color: lighten($second-color, 10%);
   }
 
   .title {
     img {
-    height: 6em;
-    padding-right: 1.5em;
+      height: 6em;
+      padding-right: 1.5em;
+      @media #{$sm-screen} {
+        display: none;
+      }
     }
   }
 
   ul {
     @extend %ul-spec;
     display: flex;
+    // justify-content: center;
+    align-items: center;
+    #menu-icon {
+      display: none;
+      transition: .2s ease;
+      &:hover {
+        cursor: pointer;
+        transform: rotate(90deg);
+        color: $second-color;
+      }
+      @media #{$med-screen} {
+        display: block;
+      }
+    }
     li {
       margin-left: 4em;
       @media #{$med-screen} {

@@ -5,31 +5,31 @@
   min-height: 100vh;
   width: auto;
   position: relative;
-  background-color: $primary-color;
-  // @include background(url('#{$path-img}/pizza-1.jpg'));
+  // background-color: $primary-color;
+  @include background(url('#{$path-img}/pizza-1.jpg'));
 
-  .hero-background {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 0;
-
-    @include keyframes(photo-slider) {
-      0% { @include background(url('#{$path-img}/pizza-1.jpg')); }
-
-      20% { @include background(url('#{$path-img}/pizza-2.png')); }
-
-      40% { @include background(url('#{$path-img}/pizza-3.jpg')); }
-
-      60% { @include background(url('#{$path-img}/pizza-6.png')); }
-
-      80% { @include background(url('#{$path-img}/icecream.png')); }
-
-      100% { @include background(url('#{$path-img}/pizza-1.jpg'));}
-    }
-    @include animation(photo-slider ease-in-out 25s both infinite);
-  }
+  // .hero-background {
+  //   height: 100%;
+  //   width: 100%;
+  //   position: absolute;
+  //   top: 0;
+  //   z-index: 0;
+  //
+  //   @include keyframes(photo-slider) {
+  //     0% { @include background(url('#{$path-img}/pizza-1.jpg')); }
+  //
+  //     20% { @include background(url('#{$path-img}/pizza-2.png')); }
+  //
+  //     40% { @include background(url('#{$path-img}/pizza-3.jpg')); }
+  //
+  //     60% { @include background(url('#{$path-img}/pizza-6.png')); }
+  //
+  //     80% { @include background(url('#{$path-img}/icecream.png')); }
+  //
+  //     100% { @include background(url('#{$path-img}/pizza-1.jpg'));}
+  //   }
+  //   @include animation(photo-slider ease-in-out 25s both infinite);
+  // }
 
   .title {
     display: flex;
@@ -40,26 +40,35 @@
 //Hero Area Ends
 
 .menu-area {
-  min-height: 150vh;
+  height: auto;
   width: auto;
   font-family: $stack-serif;
   color: $primary-color;
   @extend %flex-column;
-  padding: 5em;
+  padding: 3em 0;
   align-items: center;
+  text-align: center;
+  @media #{$sm-screen} {
+    padding: 1em;
+    font-size: 80%;
+  }
   h1 {
     text-decoration: underline;
-    margin-top: 2em;
   }
   h2 {
     flex-basis: 100%;
     text-align: center;
+    @media #{$sm-screen} {
+      margin: 0;
+    }
   }
   ul {
     @extend %ul-spec;
-
     li {
-      padding-top: 1em;
+      line-height: 2.5em;
+      @media #{$med-screen} {
+        line-height: 2em;
+      }
     }
   }
 
@@ -71,7 +80,7 @@
   .starters, .salads, .icecream, .drinks {
     @extend %menu-flex;
     @extend %flex-column;
-    margin-top: 2em;
+    text-align: left;
     flex-basis: 50%;
     @media #{$med-screen} {
      flex-basis: 100%;
@@ -81,9 +90,9 @@
   .pizzas {
     @extend %menu-flex;
     @extend %flex-column;
-    margin-top: 2em;
     flex-basis: 100%;
     @media #{$med-screen} {
+      text-align: center;
       // flex-basis: 75%;
     }
   }
@@ -93,20 +102,38 @@
 
 .location-area {
   min-height: 100vh;
+  width: auto;
   background-color: $primary-color;
-  padding: 8em;
+  padding: 5em 2em;
   display: flex;
-  justify-content: space-around;
+  flex-flow: wrap;
   text-align: center;
+  justify-content: space-around;
+  @media #{$med-screen} {
+    padding: 2em;
+    align-items: baseline center;
+    justify-content: space-between;
+  }
+  @media #{$sm-screen} {
+    font-size: 80%;
+    justify-content: center;
+    flex-flow: column;
+  }
+  h1 {
+    margin-bottom: 1em;
+  }
   img {
     margin-top: 3em;
   }
   .social {
-    margin-top: 4em;
+    // margin-top: 4em;
     @extend %flex-column;
     .icons {
       display: flex;
       justify-content: space-between;
+      @media #{$sm-screen} {
+        justify-content: space-around;
+      }
     }
   }
 }
@@ -115,13 +142,16 @@
 
 .about-area {
   min-height: 100vh;
+  width: auto;
   color: $primary-color;
   @extend %flex-column;
   text-align: center;
-  // align-items: center;
-  padding: 2em;
-  h1 {
-    margin-bottom: 2em;
+  padding: 0 2em;
+  @media #{$sm-screen} {
+    font-size: 80%;
+  }
+  @media #{$med-screen} {
+    padding: 2em;
   }
   h3 {
     margin: 2em 0;
@@ -129,15 +159,28 @@
   img {
     height: 8em;
     width: auto;
+    @media #{$med-screen} {
+      height: 5em;
+    }
+    @media #{$sm-screen} {
+      display: none;
+    }
   }
 
   .about-column {
     flex-basis: 30%;
+    margin-top: 2em;
+    @media #{$med-screen} {
+      margin-top: 0;
+    }
   }
   .about-wrap {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    @media #{$med-screen} {
+      flex-flow: column;
+    }
   }
   p {
     text-align: left;
