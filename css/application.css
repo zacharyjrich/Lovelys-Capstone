@@ -14,7 +14,7 @@
   list-style: none;
   padding-left: 0; }
 
-.menu-area, .menu-area .starters, .menu-area .salads, .menu-area .icecream, .menu-area .drinks, .menu-area .pizzas, .location-area .social, .about-area {
+.menu-area, .menu-area .starters, .menu-area .salads, .menu-area .icecream, .menu-area .drinks, .menu-area .pizzas, .about-area {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -33,7 +33,7 @@
 
 body {
   margin: 0;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #fff; }
   body p {
     margin: 0;
@@ -99,31 +99,33 @@ body {
   min-height: 100vh;
   width: auto;
   background-color: #2B2D42;
-  padding: 5em 2em;
+  padding: 5em 10em;
   display: flex;
-  flex-flow: wrap;
   text-align: center;
   justify-content: space-around; }
+  .location-area p {
+    font-size: 1.5em; }
+  .location-area .restaurant-details {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around; }
+  .location-area .map {
+    display: flex;
+    align-items: center; }
   @media (max-width: 900px) {
     .location-area {
-      padding: 2em;
-      align-items: baseline center;
-      justify-content: space-between; } }
+      padding: 3em; } }
   @media (max-width: 550px) {
     .location-area {
       font-size: 80%;
-      justify-content: center;
+      padding: 2em;
+      align-items: center;
       flex-flow: column; } }
-  .location-area h1 {
-    margin-bottom: 1em; }
   .location-area img {
-    margin-top: 3em; }
-  .location-area .social .icons {
-    display: flex;
-    justify-content: space-between; }
-    @media (max-width: 550px) {
-      .location-area .social .icons {
-        justify-content: space-around; } }
+    height: 25em; }
+    @media (max-width: 900px) {
+      .location-area img {
+        height: 20em; } }
 
 .about-area {
   min-height: 100vh;
