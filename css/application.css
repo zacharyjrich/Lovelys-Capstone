@@ -50,8 +50,7 @@ body {
   min-height: 100vh;
   width: auto;
   position: relative;
-  background: url("../img/pizza-1.jpg") no-repeat center;
-  background-size: cover; }
+  background-color: #2B2D42; }
   .hero-area .hero-background {
     height: 100%;
     width: 100%;

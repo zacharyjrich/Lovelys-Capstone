@@ -5,8 +5,8 @@
   min-height: 100vh;
   width: auto;
   position: relative;
-  // background-color: $primary-color;
-  @include background(url('#{$path-img}/pizza-1.jpg'));
+  background-color: $primary-color;
+  // @include background(url('#{$path-img}/pizza-1.jpg'));
 
   .hero-background {
     height: 100%;
