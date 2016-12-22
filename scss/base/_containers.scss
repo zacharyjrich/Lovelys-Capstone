@@ -145,7 +145,7 @@
   color: $primary-color;
   @extend %flex-column;
   text-align: center;
-  padding: 0 2em;
+  padding: 2em;
   @media #{$sm-screen} {
     font-size: 80%;
   }
@@ -170,6 +170,9 @@
     flex-basis: 30%;
     margin-top: 2em;
     @media #{$med-screen} {
+      margin-top: 2em;
+    }
+    @media #{$sm-screen} {
       margin-top: 0;
     }
   }

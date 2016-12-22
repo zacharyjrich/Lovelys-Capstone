@@ -53,12 +53,9 @@
     ul {
       @extend %ul-spec;
       display: flex;
-      // justify-content: center;
       align-items: center;
       @media #{$med-screen} {
         display: none;
-        // &:hover {
-        // }
       }
 
       li {
