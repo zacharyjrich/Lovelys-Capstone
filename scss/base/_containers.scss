@@ -5,30 +5,57 @@
   min-height: 100vh;
   width: auto;
   position: relative;
-  background-color: $primary-color;
-  // @include background(url('#{$path-img}/pizza-1.jpg'));
+  @include background(url('#{$path-img}/pizza-1.jpg'));
+  // background-color: $primary-color;
 
   .hero-background {
-    height: 100%;
+    height: 100vh;
     width: 100%;
+    display: table;
+    margin: 0 auto;
     position: absolute;
-    top: 0;
-    z-index: 0;
+    text-align: center;
 
-    @include keyframes(photo-slider) {
-      0% { @include background(url('#{$path-img}/pizza-1.jpg')); }
-
-      20% { @include background(url('#{$path-img}/pizza-2.png')); }
-
-      40% { @include background(url('#{$path-img}/pizza-3.jpg')); }
-
-      60% { @include background(url('#{$path-img}/pizza-6.png')); }
-
-      80% { @include background(url('#{$path-img}/icecream.png')); }
-
-      100% { @include background(url('#{$path-img}/pizza-1.jpg'));}
+    @include keyframes(fade-out) {
+      20% {
+      opacity: 1
+      }
+      40% {
+      opacity: 0
+      }
     }
-    @include animation(photo-slider ease-in-out 25s both infinite);
+
+    ul.photo-slider {
+      list-style-type: none;
+      padding: 0;
+      li {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background: cover no-repeat;
+        z-index: 0;
+        opacity: 0;
+        @include animation(fade-out 28s infinite both);
+        @include background(url('#{$path-img}/pizza-1.jpg'));
+      }
+      li:nth-child(2){
+        @include background(url('#{$path-img}/pizza-2.png'));
+        @include animation-delay(5s);
+      }
+      li:nth-child(3){
+        @include background(url('#{$path-img}/pizza-3.jpg'));;
+        @include animation-delay(10s);
+      }
+      li:nth-child(4){
+        @include background(url('#{$path-img}/pizza-6.png'));
+        @include animation-delay(15s);
+      }
+      li:nth-child(5){
+        @include background(url('#{$path-img}/icecream.png'));
+        @include animation-delay(20s);
+      }
+    }
   }
 
   .title {
