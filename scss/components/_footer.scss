@@ -3,20 +3,20 @@
 
 .footer {
   height: 4em;
-  padding: 0 2em;
+  padding: 0 1em;
   background-color: $third-color;
   @extend %nav-flex;
-  @media #{$sm-screen} {
-    padding: 0 1em;
+  @media #{$med-screen} {
+    padding: 0 2em;
   }
   .icons a {
-    margin-left: 2em;
+    margin-left: .8em;
     &:hover {
       cursor: pointer;
       color: $primary-color;
     }
-    @media #{$sm-screen} {
-      margin-left: .8em;
+    @media #{$med-screen} {
+      margin-left: 2em;
     }
   }
   #go-top {

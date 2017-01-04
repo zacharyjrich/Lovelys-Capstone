@@ -24,6 +24,6 @@ $path-img  : '../img';
 
 // Media query breakpoints
 
-$sm-screen  : '(max-width: 550px)';
-$med-screen : '(max-width: 900px)';
+// $sm-screen  : '(max-width: 550px)';
+$med-screen : '(min-width: 550px)';
 $lg-screen  : '(min-width: 900px)';

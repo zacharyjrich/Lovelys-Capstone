@@ -2,15 +2,16 @@
 //Navbar
 
 .navbar {
-  height: 6em;
+  height: 4em;
   width: 100%;
   position: absolute;
   background-color: rgba($primary-color, .8);
   @extend %nav-flex;
   letter-spacing: 3px;
-  padding: 0 2em;
+  padding: 0 1em;
   @media #{$med-screen} {
-    padding: 0 1em;
+    padding: 0 2em;
+    height: 6em;
   }
   .logo-red {
     color: lighten($second-color, 10%);
@@ -20,24 +21,16 @@
     img {
       height: 6em;
       padding-right: 1.5em;
-      @media #{$sm-screen} {
-        display: none;
+      display: none;
+      @media #{$med-screen} {
+        display: block;
       }
     }
   }
   .menu {
     @extend %nav-flex;
     position: relative;
-    @media #{$med-screen} {
-      &:hover {
-        ul {
-          display: block;
-          position: absolute;
-          right: 30px;
-          top: -30px;
-        }
-      }
-    }
+
     #menu-icon {
       transition: .2s ease;
         &:hover {
@@ -52,19 +45,18 @@
 
     ul {
       @extend %ul-spec;
-      display: flex;
-      align-items: center;
-      @media #{$med-screen} {
-        display: none;
+      display: none;
+      // position: absolute;
+      // right: 30px;
+      // top: -30px;
+      @media #{$lg-screen} {
+        display: flex;
       }
 
       li {
         margin-left: 4em;
         &:hover {
           @extend %hover-spec;
-        }
-        @media #{$med-screen} {
-          // display: none;
         }
       }
     }

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // Page scrolling of nav buttons
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -13,6 +14,7 @@ $(document).ready(function(){
       }
     });
   });
+  // Back to top arrow
   $(window).scroll(function() {
 		if ($(this).scrollTop() > 200) {
 			$('#go-top').fadeIn(200);
@@ -20,7 +22,4 @@ $(document).ready(function(){
 			$('#go-top').fadeOut(200);
 		}
 	});
-  // $('#menu-icon').click(function() {
-  //   $('ul.menu').show(1,0);
-  // });
 });
