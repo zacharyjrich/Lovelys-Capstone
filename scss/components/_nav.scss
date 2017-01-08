@@ -65,9 +65,10 @@
   }
 
   nav.main-nav {
-    @extend %nav-flex;
+    // @extend %nav-flex;
+    display: flex;
     justify-content: center;
-    background-color: rgba($primary-color, .9);
+    background-color: rgba($primary-color, .8);
     position: absolute;
     top: 4em;
     left: -100%;
@@ -89,21 +90,21 @@
 
     ul {
       @extend %ul-spec;
-      display: flex;
+      @extend %nav-flex;
       flex-flow: column;
       align-items: center;
       justify-content: space-around;
       @media #{$lg-screen} {
-        display: flex;
         flex-flow: row;
       }
 
       li {
+        // display: block;
         &:hover {
           @extend %hover-spec;
         }
         @media #{$lg-screen} {
-          margin-left: 4em;
+          // margin-left: 4em;
         }
       }
     }
