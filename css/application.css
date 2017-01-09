@@ -295,13 +295,18 @@ body {
         left: 50%;
         width: 50%;
         height: 6em;
-        background-color: transparent; } }
+        background-color: transparent;
+        justify-content: flex-end; } }
     .navbar nav.main-nav ul {
       flex-flow: column;
       justify-content: space-around; }
       @media (min-width: 900px) {
         .navbar nav.main-nav ul {
-          flex-flow: row; } }
+          flex-flow: row;
+          padding-right: 2em; } }
+      @media (min-width: 900px) {
+        .navbar nav.main-nav ul li:nth-child(n+2) {
+          margin-left: 4em; } }
 
 .footer {
   height: 4em;

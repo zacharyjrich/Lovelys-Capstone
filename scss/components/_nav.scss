@@ -85,6 +85,7 @@
       width: 50%;
       height: 6em;
       background-color: transparent;
+      justify-content: flex-end;
       // transition: none;
     }
 
@@ -95,6 +96,7 @@
       justify-content: space-around;
       @media #{$lg-screen} {
         flex-flow: row;
+        padding-right: 2em;
       }
 
       li {
@@ -102,8 +104,10 @@
         &:hover {
           @extend %hover-spec;
         }
-        @media #{$lg-screen} {
-          // margin-left: 4em;
+        &:nth-child(n+2) {
+          @media #{$lg-screen} {
+            margin-left: 4em;
+          }
         }
       }
     }
