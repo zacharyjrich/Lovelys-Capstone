@@ -44,28 +44,18 @@
   }
 
   #toggle + label {
-    position: absolute;
-    right: 0;
+    // display: flex;
+    // position: absolute;
+    // right: 1em;
+    // padding-right: 1em;
     cursor: pointer;
-    padding-right: 1em;
-    text-align: center;
-    cursor: pointer;
-    transition: all 500ms ease;
-  }
-
-  #menu-icon {
-    // transition: .2s ease;
-    &:checked {
-    cursor: pointer;
-    // transform: rotate(90deg);
-    }
+    // transition: all 500ms ease;
     @media #{$lg-screen} {
       display: none;
     }
   }
 
   nav.main-nav {
-    // @extend %nav-flex;
     display: flex;
     justify-content: center;
     background-color: rgba($primary-color, .8);

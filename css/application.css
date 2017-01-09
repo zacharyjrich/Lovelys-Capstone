@@ -263,18 +263,10 @@ body {
     .navbar #toggle:checked ~ label {
       color: red; }
   .navbar #toggle + label {
-    position: absolute;
-    right: 0;
-    cursor: pointer;
-    padding-right: 1em;
-    text-align: center;
-    cursor: pointer;
-    transition: all 500ms ease; }
-  .navbar #menu-icon:checked {
     cursor: pointer; }
-  @media (min-width: 900px) {
-    .navbar #menu-icon {
-      display: none; } }
+    @media (min-width: 900px) {
+      .navbar #toggle + label {
+        display: none; } }
   .navbar nav.main-nav {
     display: flex;
     justify-content: center;
