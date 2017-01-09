@@ -7,6 +7,7 @@
 
 .navbar, .navbar nav.main-nav ul, .footer {
   display: flex;
+  justify-content: space-between;
   align-items: center; }
 
 .menu-area ul, .navbar nav.main-nav ul {
@@ -297,7 +298,6 @@ body {
         background-color: transparent; } }
     .navbar nav.main-nav ul {
       flex-flow: column;
-      align-items: center;
       justify-content: space-around; }
       @media (min-width: 900px) {
         .navbar nav.main-nav ul {

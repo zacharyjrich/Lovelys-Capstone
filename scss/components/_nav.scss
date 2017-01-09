@@ -92,7 +92,6 @@
       @extend %ul-spec;
       @extend %nav-flex;
       flex-flow: column;
-      align-items: center;
       justify-content: space-around;
       @media #{$lg-screen} {
         flex-flow: row;
