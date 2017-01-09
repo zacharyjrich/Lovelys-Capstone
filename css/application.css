@@ -34,7 +34,8 @@
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
-  color: #fff; }
+  color: #fff;
+  -webkit-text-size-adjust: 100%; }
   body p {
     margin: 0;
     line-height: 1.5em;
