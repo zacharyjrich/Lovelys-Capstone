@@ -44,11 +44,9 @@
   }
 
   #toggle + label {
-    // display: flex;
+    cursor: pointer;
     // position: absolute;
     // right: 1em;
-    // padding-right: 1em;
-    cursor: pointer;
     // transition: all 500ms ease;
     @media #{$lg-screen} {
       display: none;
