@@ -9,7 +9,11 @@
   @media #{$med-screen} {
     padding: 0 2em;
   }
+  p {
+    font-size: .7em;
+  }
   .icons a {
+    font-size: .7em;
     margin-left: .8em;
     &:hover {
       cursor: pointer;
@@ -17,6 +21,7 @@
     }
     @media #{$med-screen} {
       margin-left: 2em;
+      font-size: 1em;
     }
   }
   #go-top {

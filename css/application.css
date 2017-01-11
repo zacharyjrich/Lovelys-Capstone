@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300");
+@import url("https://fonts.googleapis.com/css?family=Trirong:300");
 *,
 *::before,
 *::after {
@@ -309,14 +311,18 @@ body {
   @media (min-width: 768px) {
     .footer {
       padding: 0 2em; } }
+  .footer p {
+    font-size: .7em; }
   .footer .icons a {
+    font-size: .7em;
     margin-left: .8em; }
     .footer .icons a:hover {
       cursor: pointer;
       color: #2B2D42; }
     @media (min-width: 768px) {
       .footer .icons a {
-        margin-left: 2em; } }
+        margin-left: 2em;
+        font-size: 1em; } }
   .footer #go-top {
     position: fixed;
     bottom: 0;
