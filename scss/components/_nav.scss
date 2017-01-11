@@ -38,7 +38,6 @@
     }
     &:checked ~ label {
       color: lighten($red, 10%);
-      transform: rotateY(180deg);
     }
   }
 
@@ -46,11 +45,6 @@
     cursor: pointer;
     text-align: center;
     transition: all 500ms ease;
-    #menu-icon {
-      padding-left: 3px;
-    }
-    // position: absolute;
-    // right: 1em;
     @media #{$lg-screen} {
       display: none;
     }

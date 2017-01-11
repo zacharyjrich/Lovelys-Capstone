@@ -16,7 +16,7 @@ $(document).ready(function(){
   });
   // Back to top arrow
   $(window).scroll(function() {
-		if ($(this).scrollTop() > 200) {
+		if ($(this).scrollTop() > 50) {
 			$('#go-top').fadeIn(200);
 		} else {
 			$('#go-top').fadeOut(200);

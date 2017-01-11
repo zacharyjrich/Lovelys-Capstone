@@ -261,14 +261,11 @@ body {
     .navbar #toggle:checked ~ nav.main-nav {
       left: 0; }
     .navbar #toggle:checked ~ label {
-      color: #e33c51;
-      transform: rotateY(180deg); }
+      color: #e33c51; }
   .navbar #toggle + label {
     cursor: pointer;
     text-align: center;
     transition: all 500ms ease; }
-    .navbar #toggle + label #menu-icon {
-      padding-left: 3px; }
     @media (min-width: 992px) {
       .navbar #toggle + label {
         display: none; } }
