@@ -1,30 +1,39 @@
 
 // Base
-
-@import url('https://fonts.googleapis.com/css?family=Nunito:300');
-@import url('https://fonts.googleapis.com/css?family=Trirong:300');
+@import url( 'https://fonts.googleapis.com/css?family=Nunito:300');
+@import url( 'https://fonts.googleapis.com/css?family=Trirong:300');
 
 *,
-*::before,
-*::after {
-  @extend %border-box;
+*::after,
+*::before {
+    @extend %border-box;
 }
 
 body {
-  margin: 0;
-  font-family: $stack-sans;
-  color: $white;
-  -webkit-text-size-adjust: 100%;
-  p {
     margin: 0;
-    line-height: 1.5em;
-    letter-spacing: 1px;
-  }
-  h1, h2, h3 {
-    letter-spacing: 2px;
-  }
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+    font-family: $stack-sans;
+    color: $white;
+    -webkit-text-size-adjust: 100%;
+
+    p {
+        margin: 0;
+        line-height: 1.5rem;
+        letter-spacing: rem-calc(1);
+    }
+
+    h1,
+    h2,
+    h3 {
+        letter-spacing: rem-calc(2);
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        transition: all .5s ease-out;
+
+        &:hover {
+            @extend %hover-spec;
+        }
+    }
 }

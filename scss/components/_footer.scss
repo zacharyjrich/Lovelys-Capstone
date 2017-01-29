@@ -2,36 +2,41 @@
 // Footer
 
 .footer {
-  height: 4em;
-  padding: 0 1em;
-  background-color: $third-color;
-  @extend %nav-flex;
-  @media #{$med-screen} {
-    padding: 0 2em;
-  }
-  p {
-    font-size: .7em;
-  }
-  .icons a {
-    font-size: .7em;
-    margin-left: .8em;
-    &:hover {
-      cursor: pointer;
-      color: $primary-color;
-    }
+    height: 4rem;
+    padding: 0 1rem;
+    background-color: $third-color;
+    @extend %nav-flex;
     @media #{$med-screen} {
-      margin-left: 2em;
-      font-size: 1em;
+        padding: 0 2rem;
     }
-  }
-  #go-top {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    img {
-      height: 2em;
+
+    p {
+        font-size: .7rem;
     }
-  }
+
+    .icons a {
+        font-size: .7rem;
+        margin-left: .8rem;
+
+        &:hover {
+            cursor: pointer;
+            color: $primary-color;
+        }
+        @media #{$med-screen} {
+            margin-left: 2rem;
+            font-size: 1rem;
+        }
+    }
+
+    #go-top {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+
+        img {
+            height: 2rem;
+        }
+    }
 }

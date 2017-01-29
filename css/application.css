@@ -1,22 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300");
 @import url("https://fonts.googleapis.com/css?family=Trirong:300");
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.navbar, .navbar nav.main-nav ul, .footer {
+.navbar, .navbar .main-nav ul, .footer {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-.menu-area ul, .navbar nav.main-nav ul {
+.menu-area ul, .navbar .main-nav ul {
   list-style: none;
   padding: 0; }
 
-.menu-area, .menu-area .starters, .menu-area .salads, .menu-area .icecream, .menu-area .drinks, .menu-area .pizzas, .about-area {
+.menu-area, .menu-area .drinks,
+.menu-area .icecream,
+.menu-area .salads,
+.menu-area .starters, .menu-area .pizzas, .about-area {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -25,11 +28,14 @@
   display: flex;
   flex-wrap: wrap; }
 
-.menu-area .starters, .menu-area .salads, .menu-area .icecream, .menu-area .drinks, .menu-area .pizzas {
+.menu-area .drinks,
+.menu-area .icecream,
+.menu-area .salads,
+.menu-area .starters, .menu-area .pizzas {
   display: flex;
   flex-flow: row wrap; }
 
-.navbar nav.main-nav ul li:hover {
+body a:hover {
   color: #e33c51;
   cursor: pointer; }
 
@@ -40,20 +46,22 @@ body {
   -webkit-text-size-adjust: 100%; }
   body p {
     margin: 0;
-    line-height: 1.5em;
-    letter-spacing: 1px; }
-  body h1, body h2, body h3 {
-    letter-spacing: 2px; }
+    line-height: 1.5rem;
+    letter-spacing: rem-calc(1); }
+  body h1,
+  body h2,
+  body h3 {
+    letter-spacing: rem-calc(2); }
   body a {
     color: inherit;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all .5s ease-out; }
 
 .hero-area {
   min-height: 100vh;
   width: auto;
   position: relative;
-  background: url("../img/pizza-1.jpg") no-repeat center;
-  background-size: cover; }
+  background: url("../img/pizza-1.jpg") no-repeat center/cover; }
   .hero-area .hero-background {
     height: 100vh;
     width: 100%;
@@ -90,29 +98,24 @@ body {
         -webkit-animation: fade-out 28s infinite both;
         -moz-animation: fade-out 28s infinite both;
         animation: fade-out 28s infinite both;
-        background: url("../img/pizza-1.jpg") no-repeat center;
-        background-size: cover; }
+        background: url("../img/pizza-1.jpg") no-repeat center/cover; }
       .hero-area .hero-background ul.photo-slider li:nth-child(2) {
-        background: url("../img/pizza-2.png") no-repeat center;
-        background-size: cover;
+        background: url("../img/pizza-2.png") no-repeat center/cover;
         -webkit-animation-delay: 5s;
         -moz-animation-delay: 5s;
         animation-delay: 5s; }
       .hero-area .hero-background ul.photo-slider li:nth-child(3) {
-        background: url("../img/pizza-3.jpg") no-repeat center;
-        background-size: cover;
+        background: url("../img/pizza-3.jpg") no-repeat center/cover;
         -webkit-animation-delay: 10s;
         -moz-animation-delay: 10s;
         animation-delay: 10s; }
       .hero-area .hero-background ul.photo-slider li:nth-child(4) {
-        background: url("../img/pizza-6.png") no-repeat center;
-        background-size: cover;
+        background: url("../img/pizza-6.png") no-repeat center/cover;
         -webkit-animation-delay: 15s;
         -moz-animation-delay: 15s;
         animation-delay: 15s; }
       .hero-area .hero-background ul.photo-slider li:nth-child(5) {
-        background: url("../img/icecream.png") no-repeat center;
-        background-size: cover;
+        background: url("../img/icecream.png") no-repeat center/cover;
         -webkit-animation-delay: 20s;
         -moz-animation-delay: 20s;
         animation-delay: 20s; }
@@ -125,46 +128,52 @@ body {
   width: auto;
   font-family: "Trirong", serif;
   color: #2B2D42;
-  font-size: .8em;
-  padding: 1.5em;
+  font-size: .8rem;
+  padding: 2rem;
   align-items: center;
   text-align: center; }
   @media (min-width: 768px) {
     .menu-area {
-      padding: 3em 0; } }
+      padding: 10rem 0; } }
   @media (min-width: 992px) {
     .menu-area {
-      font-size: 1em; } }
+      font-size: 1rem; } }
   .menu-area h1 {
     text-decoration: underline;
-    margin-bottom: 1em; }
+    margin-bottom: 1rem; }
   .menu-area h2 {
     flex-basis: 100%;
     text-align: center;
     margin: 0; }
   .menu-area ul li {
-    line-height: 1.75em; }
+    line-height: 1.75rem; }
     @media (min-width: 768px) {
       .menu-area ul li {
-        line-height: 2.5em; } }
+        line-height: 2.5rem; } }
   .menu-area .row {
     justify-content: space-around; }
-  .menu-area .starters, .menu-area .salads, .menu-area .icecream, .menu-area .drinks {
+  .menu-area .drinks,
+  .menu-area .icecream,
+  .menu-area .salads,
+  .menu-area .starters {
     text-align: left;
     flex-basis: 100%; }
     @media (min-width: 768px) {
-      .menu-area .starters, .menu-area .salads, .menu-area .icecream, .menu-area .drinks {
+      .menu-area .drinks,
+      .menu-area .icecream,
+      .menu-area .salads,
+      .menu-area .starters {
         flex-basis: 50%; } }
   .menu-area .pizzas {
     flex-basis: 100%;
     text-align: center; }
 
 .location-area {
-  min-height: 100vh;
+  height: auto;
   width: auto;
   background-color: #2B2D42;
-  padding: 2em;
-  font-size: .8em;
+  padding: 2rem;
+  font-size: .8rem;
   text-align: center;
   display: flex;
   flex-flow: column;
@@ -172,41 +181,42 @@ body {
   @media (min-width: 768px) {
     .location-area {
       flex-flow: row;
-      padding: 5em; }
+      padding: 5rem; }
       .location-area .map {
-        display: flex;
-        align-items: center; } }
+        align-items: center;
+        display: flex; } }
   @media (min-width: 992px) {
     .location-area {
-      font-size: 1em;
-      padding: 6em; } }
+      font-size: 1rem;
+      padding: 6rem; } }
   .location-area .restaurant-details {
     display: flex;
     flex-flow: column;
     justify-content: space-around; }
   .location-area img {
-    height: 20em; }
+    height: 20rem;
+    padding-top: 2rem; }
     @media (min-width: 992px) {
       .location-area img {
-        height: 25em; } }
+        height: 25rem; } }
 
 .about-area {
-  min-height: 100vh;
+  height: auto;
   width: auto;
   color: #2B2D42;
   text-align: center;
-  padding: 2em;
-  font-size: .8em; }
+  padding: 2rem;
+  font-size: .8rem; }
   @media (min-width: 768px) {
     .about-area {
-      padding: 2em; } }
+      padding: 5rem; } }
   @media (min-width: 992px) {
     .about-area {
-      font-size: 1em; } }
+      font-size: 1rem; } }
   .about-area h3 {
-    margin: 2em 0; }
+    margin: 2rem 0; }
   .about-area img {
-    height: 8em;
+    height: 8rem;
     width: auto;
     display: none; }
     @media (min-width: 768px) {
@@ -219,7 +229,7 @@ body {
     align-items: center; }
     @media (min-width: 768px) {
       .about-area .about-column {
-        margin-top: 2em; } }
+        margin-top: 2rem; } }
     @media (min-width: 992px) {
       .about-area .about-column {
         flex-basis: 30%; } }
@@ -236,21 +246,21 @@ body {
     font-family: "Trirong", serif; }
 
 .navbar {
-  height: 4em;
+  height: 4rem;
   width: 100%;
   position: absolute;
   background-color: rgba(43, 45, 66, 0.8);
   letter-spacing: 3px;
-  padding: 0 1em; }
+  padding: 0 1rem; }
   @media (min-width: 768px) {
     .navbar {
-      padding: 0 2em;
-      height: 6em; } }
+      padding: 0 2rem;
+      height: 6rem; } }
   .navbar .logo-red {
     color: #e33c51; }
   .navbar .title img {
-    height: 6em;
-    padding-right: 1.5em;
+    height: 6rem;
+    padding-right: 1.5rem;
     display: none; }
     @media (min-width: 768px) {
       .navbar .title img {
@@ -271,58 +281,57 @@ body {
     @media (min-width: 992px) {
       .navbar #toggle + label {
         display: none; } }
-  .navbar nav.main-nav {
+  .navbar .main-nav {
     display: flex;
     justify-content: center;
     background-color: rgba(43, 45, 66, 0.8);
     position: absolute;
-    top: 4em;
+    top: 4rem;
     left: -100%;
     width: 100%;
-    height: 10em;
+    height: 10rem;
     transition: left 500ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
     overflow: hidden; }
     @media (min-width: 768px) {
-      .navbar nav.main-nav {
-        top: 6em; } }
+      .navbar .main-nav {
+        top: 6rem; } }
     @media (min-width: 992px) {
-      .navbar nav.main-nav {
+      .navbar .main-nav {
         top: 0;
         left: 50%;
         width: 50%;
-        height: 6em;
+        height: 6rem;
         background-color: transparent;
         justify-content: flex-end; } }
-    .navbar nav.main-nav ul {
+    .navbar .main-nav ul {
       flex-flow: column;
       justify-content: space-around; }
       @media (min-width: 992px) {
-        .navbar nav.main-nav ul {
+        .navbar .main-nav ul {
           flex-flow: row;
-          padding-right: 2em; } }
-      @media (min-width: 992px) {
-        .navbar nav.main-nav ul li:nth-child(n+2) {
-          margin-left: 4em; } }
+          padding-right: 2rem; }
+          .navbar .main-nav ul li {
+            margin-left: 4rem; } }
 
 .footer {
-  height: 4em;
-  padding: 0 1em;
+  height: 4rem;
+  padding: 0 1rem;
   background-color: #848FA3; }
   @media (min-width: 768px) {
     .footer {
-      padding: 0 2em; } }
+      padding: 0 2rem; } }
   .footer p {
-    font-size: .7em; }
+    font-size: .7rem; }
   .footer .icons a {
-    font-size: .7em;
-    margin-left: .8em; }
+    font-size: .7rem;
+    margin-left: .8rem; }
     .footer .icons a:hover {
       cursor: pointer;
       color: #2B2D42; }
     @media (min-width: 768px) {
       .footer .icons a {
-        margin-left: 2em;
-        font-size: 1em; } }
+        margin-left: 2rem;
+        font-size: 1rem; } }
   .footer #go-top {
     position: fixed;
     bottom: 0;
@@ -330,6 +339,6 @@ body {
     transform: translate(-50%, -50%);
     display: none; }
     .footer #go-top img {
-      height: 2em; }
+      height: 2rem; }
 
 /*# sourceMappingURL=application.css.map */
