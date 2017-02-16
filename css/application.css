@@ -47,11 +47,11 @@ body {
   body p {
     margin: 0;
     line-height: 1.5rem;
-    letter-spacing: rem-calc(1); }
+    letter-spacing: 1px; }
   body h1,
   body h2,
   body h3 {
-    letter-spacing: rem-calc(2); }
+    letter-spacing: 2px; }
   body a {
     color: inherit;
     text-decoration: none;
@@ -178,11 +178,19 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: space-around; }
+  .location-area .map {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 2em; }
+    .location-area .map #map {
+      height: 15rem;
+      width: 25rem; }
   @media (min-width: 768px) {
     .location-area {
       flex-flow: row;
       padding: 5rem; }
-      .location-area .map {
+      .location-area #map {
         align-items: center;
         display: flex; } }
   @media (min-width: 992px) {
@@ -323,8 +331,8 @@ body {
   .footer p {
     font-size: .7rem; }
   .footer .icons a {
-    font-size: .7rem;
-    margin-left: .8rem; }
+    font-size: .8rem;
+    margin-left: 1rem; }
     .footer .icons a:hover {
       cursor: pointer;
       color: #2B2D42; }
@@ -339,6 +347,6 @@ body {
     transform: translate(-50%, -50%);
     display: none; }
     .footer #go-top img {
-      height: 2rem; }
+      height: 1.5rem; }
 
 /*# sourceMappingURL=application.css.map */

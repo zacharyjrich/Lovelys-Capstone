@@ -148,11 +148,23 @@
     display: flex;
     flex-flow: column;
     justify-content: space-around;
+
+    .map {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 2em;
+
+        #map {
+            height: 15rem;
+            width: 25rem;
+        }
+    }
     @media #{$med-screen} {
         flex-flow: row;
         padding: 5rem;
 
-        .map {
+        #map {
             align-items: center;
             display: flex;
         }
