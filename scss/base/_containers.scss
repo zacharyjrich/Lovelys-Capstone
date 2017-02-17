@@ -148,30 +148,32 @@
     display: flex;
     flex-flow: column;
     justify-content: space-around;
+    @media #{$med-screen} {
+        flex-flow: row;
+        padding: 5rem;
+    }
+    @media #{$lg-screen} {
+        font-size: 1rem;
+        padding: 6rem;
+    }
 
     .map {
         align-items: center;
         justify-content: center;
         display: flex;
-        margin-top: 2em;
+        margin-top: 2rem;
+        @media #{$med-screen} {
+            margin: 0 0 0 2rem;
+        }
 
-        #map {
+        #google-map {
             height: 15rem;
             width: 25rem;
+            @media #{$lg-screen} {
+                height: 25rem;
+                width: 35rem;
+            }
         }
-    }
-    @media #{$med-screen} {
-        flex-flow: row;
-        padding: 5rem;
-
-        #map {
-            align-items: center;
-            display: flex;
-        }
-    }
-    @media #{$lg-screen} {
-        font-size: 1rem;
-        padding: 6rem;
     }
 
     .restaurant-details {
@@ -180,13 +182,13 @@
         justify-content: space-around;
     }
 
-    img {
-        height: 20rem;
-        padding-top: 2rem;
-        @media #{$lg-screen} {
-            height: 25rem;
-        }
-    }
+    // img {
+    //     height: 20rem;
+    //     padding-top: 2rem;
+    //     @media #{$lg-screen} {
+    //         height: 25rem;
+    //     }
+    // }
 }
 
 //Location Area Ends
