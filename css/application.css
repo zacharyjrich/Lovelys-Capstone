@@ -197,7 +197,9 @@ body {
         margin: 0 0 0 2rem; } }
     .location-area .map #google-map {
       height: 15rem;
-      width: 25rem; }
+      width: 25rem;
+      border-radius: 1rem;
+      z-index: 0; }
       @media (min-width: 992px) {
         .location-area .map #google-map {
           height: 25rem;

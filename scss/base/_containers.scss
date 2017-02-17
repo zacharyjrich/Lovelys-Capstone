@@ -170,6 +170,8 @@
         #google-map {
             height: 15rem;
             width: 25rem;
+            border-radius: 1rem;
+            z-index: 0;
             @media #{$lg-screen} {
                 height: 25rem;
                 width: 35rem;
