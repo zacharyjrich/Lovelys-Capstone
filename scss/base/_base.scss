@@ -30,7 +30,7 @@ body {
     a {
         color: inherit;
         text-decoration: none;
-        transition: all .5s ease-out;
+        transition: all .25s ease-out;
 
         &:hover {
             @extend %hover-spec;

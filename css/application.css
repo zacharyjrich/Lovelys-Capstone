@@ -55,7 +55,7 @@ body {
   body a {
     color: inherit;
     text-decoration: none;
-    transition: all .5s ease-out; }
+    transition: all .25s ease-out; }
 
 .hero-area {
   min-height: 100vh;
@@ -129,6 +129,7 @@ body {
   font-family: "Trirong", serif;
   color: #2B2D42;
   font-size: .8rem;
+  box-shadow: inset 10px 0 100px 10px #848FA3;
   padding: 2rem;
   align-items: center;
   text-align: center; }
