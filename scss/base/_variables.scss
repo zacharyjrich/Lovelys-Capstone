@@ -1,29 +1,28 @@
 
 // Descriptive color variables
 
-$white          : #fff;
-$black          : #000;
-$dark-blue      : #2B2D42;
-$red            : #CE1E34;
-$gray           : #848FA3;
+$white: #fff;
+$black: #000;
+$dark-blue: #2B2D42;
+$red: #CE1E34;
+$gray: #848FA3;
 
 // Functional color variables
 
-$primary-color  : $dark-blue;
-$second-color   : $red;
-$third-color    : $gray;
+$primary-color: $dark-blue;
+$second-color: $red;
+$third-color: $gray;
 
 // Font stacks
 
-$stack-sans : 'Nunito', sans-serif;
+$stack-sans: 'Nunito', sans-serif;
 $stack-serif: 'Trirong', serif;
 
 // Asset paths
 
-$path-img  : '../img';
+$path-img: '../img';
 
 // Media query breakpoints
 
-// $sm-screen  : '(max-width: 550px)';
-$med-screen : '(min-width: 768px)';
-$lg-screen  : '(min-width: 992px)';
+$med-screen: '(min-width: 768px)';
+$lg-screen: '(min-width: 992px)';
