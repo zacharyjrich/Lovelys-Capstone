@@ -165,8 +165,7 @@ function initMap() {
           }
         ]
     });
-    var marker = {
-
+    var icon = {
         url: '../img/map-marker.svg',
         // scaledSize: new google.maps.Size(100, 50), // scaled size
         origin: new google.maps.Point(0,0),
@@ -174,7 +173,7 @@ function initMap() {
       var marker = new google.maps.Marker({
         position: uluru,
         map: map,
-        icon: marker
+        icon: icon
     });
 }
 
@@ -196,10 +195,10 @@ $(document).ready(function(){
   });
   // Back to top arrow
   $(window).scroll(function() {
-		if ($(this).scrollTop() > 50) {
-			$('#go-top').fadeIn(200);
-		} else {
-			$('#go-top').fadeOut(200);
-		}
-	});
+      if ($(this).scrollTop() > 50) {
+          $('#go-top').fadeIn(200);
+      } else {
+          $('#go-top').fadeOut(200);
+      }
+  });
 });

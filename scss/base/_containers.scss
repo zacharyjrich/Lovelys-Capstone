@@ -52,7 +52,7 @@
             }
 
             li:nth-child(4) {
-                @include background(url('#{$path-img}/pizza-6.png'));
+                @include background(url('#{$path-img}/pizza-4.png'));
                 @include animation-delay(15s);
             }
 
@@ -77,7 +77,7 @@
     font-family: $stack-serif;
     color: $primary-color;
     font-size: .8rem;
-    box-shadow: inset 10px 0 100px 10px $third-color;
+    box-shadow: inset 10px 0 100px 0 $third-color;
     @extend %flex-column;
     padding: 2rem;
     align-items: center;

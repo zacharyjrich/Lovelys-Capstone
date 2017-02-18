@@ -110,7 +110,7 @@ body {
         -moz-animation-delay: 10s;
         animation-delay: 10s; }
       .hero-area .hero-background ul.photo-slider li:nth-child(4) {
-        background: url("../img/pizza-6.png") no-repeat center/cover;
+        background: url("../img/pizza-4.png") no-repeat center/cover;
         -webkit-animation-delay: 15s;
         -moz-animation-delay: 15s;
         animation-delay: 15s; }
@@ -129,7 +129,7 @@ body {
   font-family: "Trirong", serif;
   color: #2B2D42;
   font-size: .8rem;
-  box-shadow: inset 10px 0 100px 10px #848FA3;
+  box-shadow: inset 10px 0 100px 0 #848FA3;
   padding: 2rem;
   align-items: center;
   text-align: center; }
