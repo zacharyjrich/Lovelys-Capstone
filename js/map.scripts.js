@@ -165,13 +165,14 @@ function initMap() {
           }
         ]
     });
-    var icon = {
-        url: './img/map-marker.svg',
-        origin: new google.maps.Point(0,0),
-        anchor: new google.maps.Point(0,0)};
-      var marker = new google.maps.Marker({
-        position: uluru,
-        map: map,
-        icon: icon
-    });
+    // var icon = {
+    //     url: '../img/map-marker.svg',
+    //     // scaledSize: new google.maps.Size(100, 50), // scaled size
+    //     origin: new google.maps.Point(0,0),
+    //     anchor: new google.maps.Point(0, 0)};
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+      icon: '/../img/map-marker.svg'
+  });
 }
