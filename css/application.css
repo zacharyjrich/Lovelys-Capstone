@@ -90,7 +90,6 @@ body {
       .hero-area .hero-background ul.photo-slider li {
         height: 100%;
         width: 100%;
-        position: absolute;
         top: 0;
         background: cover no-repeat;
         z-index: 0;
