@@ -332,6 +332,7 @@ body {
   .footer p {
     font-size: .7rem; }
   .footer .icons a {
+    display: inline-block;
     font-size: .8rem;
     margin-left: 1rem; }
     .footer .icons a:hover {
