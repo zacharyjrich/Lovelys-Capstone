@@ -81,17 +81,19 @@
     @extend %flex-column;
     padding: 2rem;
     align-items: center;
-    text-align: center;
     @media #{$med-screen} {
-        padding: 10rem 0;
+        padding: 8rem 0;
     }
     @media #{$lg-screen} {
         font-size: 1rem;
+        padding: 10rem 0;
     }
 
     h1 {
-        text-decoration: underline;
-        margin-bottom: 1rem;
+        hr {
+            border: 1px solid $dark-blue;
+            margin: 2rem auto;
+        }
     }
 
     h2 {
@@ -111,14 +113,8 @@
         }
     }
 
-    .row {
-        @extend %row-spec;
-        justify-content: space-around;
-    }
-
     .drinks,
     .icecream,
-    .salads,
     .starters {
         @extend %menu-flex;
         @extend %flex-column;
@@ -129,11 +125,15 @@
         }
     }
 
-    .pizzas {
+    .pizzas,
+    .salads {
         @extend %menu-flex;
         @extend %flex-column;
         flex-basis: 100%;
         text-align: center;
+        @media #{$med-screen} {
+            text-align: left;
+        }
     }
 }
 
