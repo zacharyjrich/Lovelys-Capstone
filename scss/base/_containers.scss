@@ -72,8 +72,6 @@
 //Hero Area Ends
 
 .menu-area {
-    height: auto;
-    width: auto;
     font-family: $stack-serif;
     color: $primary-color;
     font-size: .8rem;
@@ -140,8 +138,6 @@
 //Menu Area Ends
 
 .location-area {
-    height: auto;
-    width: auto;
     background-color: $primary-color;
     padding: 2rem;
     font-size: .8rem;
@@ -197,8 +193,6 @@
 //Location Area Ends
 
 .about-area {
-    height: auto;
-    width: auto;
     color: $primary-color;
     @extend %flex-column;
     text-align: center;
@@ -254,3 +248,23 @@
 }
 
 //About Area Ends
+
+.friends {
+    align-items: center;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+    padding: 2rem;
+    text-align: center;
+    @media #{$med-screen} {
+        padding: 5rem;
+    }
+    @media #{$lg-screen} {
+        font-size: 1rem;
+    }
+
+    .purveyors {
+        margin-top: 2rem;
+    }
+}

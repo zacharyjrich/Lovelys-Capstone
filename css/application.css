@@ -120,8 +120,6 @@ body {
     align-items: center; }
 
 .menu-area {
-  height: auto;
-  width: auto;
   font-family: "Trirong", serif;
   color: #2B2D42;
   font-size: .8rem;
@@ -167,8 +165,6 @@ body {
         text-align: left; } }
 
 .location-area {
-  height: auto;
-  width: auto;
   background-color: #2B2D42;
   padding: 2rem;
   font-size: .8rem;
@@ -207,8 +203,6 @@ body {
     justify-content: space-around; }
 
 .about-area {
-  height: auto;
-  width: auto;
   color: #2B2D42;
   text-align: center;
   padding: 2rem;
@@ -250,6 +244,23 @@ body {
   .about-area p {
     text-align: left;
     font-family: "Trirong", serif; }
+
+.friends {
+  align-items: center;
+  background-color: #2B2D42;
+  display: flex;
+  flex-direction: column;
+  font-size: .8rem;
+  padding: 2rem;
+  text-align: center; }
+  @media (min-width: 640px) {
+    .friends {
+      padding: 5rem; } }
+  @media (min-width: 1024px) {
+    .friends {
+      font-size: 1rem; } }
+  .friends .purveyors {
+    margin-top: 2rem; }
 
 .navbar {
   height: 4rem;
