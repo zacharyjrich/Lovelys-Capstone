@@ -120,8 +120,8 @@ body {
     align-items: center; }
 
 .menu-area {
-  font-family: "Trirong", serif;
   color: #2B2D42;
+  font-family: "Trirong", serif;
   font-size: .8rem;
   box-shadow: inset 10px 0 100px 0 #848FA3;
   padding: 2rem;
@@ -138,7 +138,6 @@ body {
     margin: 2rem auto; }
   .menu-area h2 {
     flex-basis: 100%;
-    text-align: center;
     margin: 0; }
   .menu-area ul li {
     line-height: 1.75rem; }
@@ -182,7 +181,7 @@ body {
         margin: 0 0 0 2rem; } }
     .location-area .map #google-map {
       height: 15rem;
-      width: 25rem;
+      width: 23rem;
       border-radius: 1rem;
       z-index: 0; }
       @media (min-width: 1024px) {

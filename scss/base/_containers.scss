@@ -72,8 +72,8 @@
 //Hero Area Ends
 
 .menu-area {
-    font-family: $stack-serif;
     color: $primary-color;
+    font-family: $stack-serif;
     font-size: .8rem;
     box-shadow: inset 10px 0 100px 0 $third-color;
     @extend %flex-column;
@@ -96,7 +96,6 @@
 
     h2 {
         flex-basis: 100%;
-        text-align: center;
         margin: 0;
     }
 
@@ -159,7 +158,7 @@
 
         #google-map {
             height: 15rem;
-            width: 25rem;
+            width: 23rem;
             border-radius: 1rem;
             z-index: 0;
             @media #{$lg-screen} {
@@ -178,14 +177,6 @@
             font-family: $stack-serif;
         }
     }
-
-    // img {
-    //     height: 20rem;
-    //     padding-top: 2rem;
-    //     @media #{$lg-screen} {
-    //         height: 25rem;
-    //     }
-    // }
 }
 
 //Location Area Ends
