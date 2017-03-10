@@ -11,7 +11,10 @@
     }
 
     p {
-        font-size: .7rem;
+        font-size: .5rem;
+        @media #{$med-screen} {
+            font-size: .7rem;
+        }
     }
 
     .icons a {

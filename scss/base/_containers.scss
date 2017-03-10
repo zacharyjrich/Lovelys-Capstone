@@ -179,6 +179,10 @@
         display: flex;
         flex-flow: column;
         justify-content: space-around;
+
+        p {
+            font-family: $stack-serif;
+        }
     }
 
     // img {
@@ -265,6 +269,8 @@
     }
 
     .purveyors {
+        font-family: $stack-serif;
         margin-top: 2rem;
+        max-width: 1024px;
     }
 }

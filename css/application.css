@@ -201,6 +201,8 @@ body {
     display: flex;
     flex-flow: column;
     justify-content: space-around; }
+    .location-area .restaurant-details p {
+      font-family: "Trirong", serif; }
 
 .about-area {
   color: #2B2D42;
@@ -260,7 +262,9 @@ body {
     .friends {
       font-size: 1rem; } }
   .friends .purveyors {
-    margin-top: 2rem; }
+    font-family: "Trirong", serif;
+    margin-top: 2rem;
+    max-width: 1024px; }
 
 .navbar {
   height: 4rem;
@@ -338,7 +342,10 @@ body {
     .footer {
       padding: 0 2rem; } }
   .footer p {
-    font-size: .7rem; }
+    font-size: .5rem; }
+    @media (min-width: 640px) {
+      .footer p {
+        font-size: .7rem; } }
   .footer .icons a {
     display: inline-block;
     font-size: .8rem;
