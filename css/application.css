@@ -16,17 +16,17 @@
   list-style: none;
   padding: 0; }
 
-.menu-area, .menu-area .drinks,
+.menu-area, .menu-area .add-ons,
 .menu-area .icecream,
-.menu-area .starters, .menu-area .pizzas,
+.menu-area .pizzas,
 .menu-area .salads, .about-area {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-.menu-area .drinks,
+.menu-area .add-ons,
 .menu-area .icecream,
-.menu-area .starters, .menu-area .pizzas,
+.menu-area .pizzas,
 .menu-area .salads {
   display: flex;
   flex-flow: row wrap; }
@@ -145,24 +145,16 @@ body {
     @media (min-width: 640px) {
       .menu-area ul li {
         line-height: 2.5rem; } }
-  .menu-area .drinks,
+  .menu-area .add-ons,
   .menu-area .icecream,
-  .menu-area .starters {
-    text-align: left;
-    flex-basis: 100%; }
-    @media (min-width: 640px) {
-      .menu-area .drinks,
-      .menu-area .icecream,
-      .menu-area .starters {
-        flex-basis: 50%; } }
   .menu-area .pizzas,
   .menu-area .salads {
     flex-basis: 100%;
     text-align: center; }
-    @media (min-width: 640px) {
-      .menu-area .pizzas,
-      .menu-area .salads {
-        text-align: left; } }
+  @media (min-width: 640px) {
+    .menu-area .pizzas,
+    .menu-area .salads {
+      flex-basis: 50%; } }
 
 .location-area {
   background-color: #2B2D42;

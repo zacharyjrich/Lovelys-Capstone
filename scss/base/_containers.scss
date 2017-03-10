@@ -111,26 +111,20 @@
         }
     }
 
-    .drinks,
+    .add-ons,
     .icecream,
-    .starters {
-        @extend %menu-flex;
-        @extend %flex-column;
-        text-align: left;
-        flex-basis: 100%;
-        @media #{$med-screen} {
-            flex-basis: 50%;
-        }
-    }
-
     .pizzas,
     .salads {
         @extend %menu-flex;
         @extend %flex-column;
         flex-basis: 100%;
         text-align: center;
+    }
+
+    .pizzas,
+    .salads {
         @media #{$med-screen} {
-            text-align: left;
+            flex-basis: 50%;
         }
     }
 }
