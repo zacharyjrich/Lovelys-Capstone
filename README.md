@@ -10,17 +10,19 @@ This project is a redesign of the website for Portland restaurant, Lovely's Fift
 
 ## Objectives
 
-1) Create a website that is modern, responsive and user friendly
+1 - Create a website that is modern, responsive and user friendly
 
-2) Page is responsive with three breakpoints
+2 - Page is responsive with three breakpoints
 
-3) Photo gallery is functional at all page sizes
+3 - Photo gallery is functional at all page sizes
 
 ## Setup/Installation Requirements
 
-1) Check it out here https://zacharyjrich.github.io/Lovelys-Capstone
+1 - Check it out here https://zacharyjrich.github.io/Lovelys-Capstone
 
-2) Or clone this repository https://github.com/zacharyjrich/Lovelys-Capstone
+2 - Or clone this repository https://github.com/zacharyjrich/Lovelys-Capstone
+
+3 - Check out the Case Study ![case study image](img/lovelys-case-study.pdf "Case Study")
 
 ## Known Bugs
 
