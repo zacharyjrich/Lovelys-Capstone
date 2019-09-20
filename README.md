@@ -22,7 +22,7 @@ This project is a redesign of the website for Portland restaurant, Lovely's Fift
 
 2 - Or clone this repository https://github.com/zacharyjrich/Lovelys-Capstone
 
-3 - Check out the Case Study [case study](../blob/master/img/lovelys-case-study.pdf)
+3 - [Check out the Case Study](../master/img/lovelys-case-study.pdf)
 
 ## Known Bugs
 
